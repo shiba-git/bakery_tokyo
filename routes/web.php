@@ -16,4 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('top');;
+Route::get('/pan/', 'PanController@index')->name('pan.index');
+Route::get('/pan/create/', 'PanController@create')->name('pan.create');
+Route::post('/pan/complete/', 'PanController@complete')->name('pan.complete');

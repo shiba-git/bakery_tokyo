@@ -8,7 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   $('#recommend > .col > .recommend-item > figure').matchHeight();
   $('.col > .choosePanFromImage-item > figure').matchHeight();
+  $('.col > .searchStoreBox-item > .searchStoreBox-itemWrap').matchHeight();
   $('.card-image').matchHeight();
+
+  //pan create
+  $("input[type='file']").on('change',function(){
+     var file = $(this).prop('files')[0];
+     $(".filename").html(file.name);
+  });
   // // location Information
   // var location = document.getElementById('locationInformation');
   // // location click Event

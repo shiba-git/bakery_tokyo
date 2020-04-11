@@ -188,12 +188,12 @@
           </div>
           <div class="links row" id="links">
             <div class="col s12 m6 l6">
-                <a id="locationInformation"class="waves-effect waves-light">
+                <a id="locationInformation" class="waves-effect waves-light" href="{{ url('pan/create/') }}">
                   パン画像を投稿 ( 提供 ) する<i class="material-icons chevron_right-icon">chevron_right</i>
                 </a>
             </div>
             <div class="col s12 m6 l6">
-              <a id="locationInformation"class="waves-effect waves-light">
+              <a id="locationInformation"class="waves-effect waves-light" href="{{ url('pan/') }}">
                 パン画像一覧を見る<i class="material-icons chevron_right-icon">chevron_right</i>
               </a>
             </div>

@@ -17,10 +17,10 @@
     <header class="navbar-fixed">
         <nav>
           <div class="nav-wrapper">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <a href="/" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
             <div class="container">
               <h1>
-                <a href="#!" class="brand-logo">
+                <a href="/" class="brand-logo">
                   <img src="{{ asset('images/logo.png') }}" width="100px" height="auto">
                 </a>
               <h1>
