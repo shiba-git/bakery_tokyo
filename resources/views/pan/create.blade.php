@@ -35,14 +35,14 @@
                 </div>
               </div>
               <div class="col s12 m6 l6">
-                <label for="storename">
-                  パン屋の店名<span style="color:red">※</span><input type="text" name="storename" placeholder="店名"value="{{ old('storename')}}">
-                </label>
-              </div>
-              <div class="col s12 m6 l6">
                 <label for="panname">
                   パンの名前<span style="color:red">※</span><input type="text" name="panname" placeholder="パンの名前"
                   value="{{old('panname')}}">
+                </label>
+              </div>
+              <div class="col s12 m6 l6">
+                <label for="storename">
+                  パン屋の店名<span style="color:red">※</span><input type="text" name="storename" placeholder="店名"value="{{ old('storename')}}">
                 </label>
               </div>
               <div class="col s12 m6 l6">
@@ -56,6 +56,7 @@
                 <p>2, パン画像は、切り取りや ( 綺麗に見せるために ) 加工することを予めご了承ください。</p>
                 <p>3, 画像、パンの名前、店名は必須項目になります。Instagramは必須ではありません。しかし、宣伝が出来ません。</p>
               </div>
+            
               <div class="col s12">
                 <input type="submit" value="投稿する" class="createSubmit"/>
               </div>

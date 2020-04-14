@@ -89,102 +89,24 @@
           <div class="choosePanFromImage row" id="choosePanFromImage">
             <h2><i class="material-icons">image</i>画像からパンを選ぶ</h2>
             <p class="description"><a href="">提供されたパン画像</a> や <a href="https://www.instagram.com/bakery_tokyo/" target="_blank">BarkeyTokyoのインスタグラム</a>をランダムで掲載してます。
-            <div class="col s12 m6 l4">
-              <section class="choosePanFromImage-item">
-                <figure class="valign-wrapper">
-                  <img src="./images/choosePanFromImage1.png" alt="愛国あんぱん">
-                </figure>
-                <h2>愛国あんぱん</h2>
-                <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 蒲田駅</p>
-                <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="">あんぱん</a></p>
-                <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="#">@Barkey_Tokyo</a></p>
-                <div class="store-btn">
-                  <a class="waves-effect waves-light btn-large">
-                      <i class="material-icons store-icon">store</i>お店の詳細へ
-                  </a>
-                </div>
-              </section>
-            </div> <!-- col -->
-            <div class="col s12 m6 l4">
-              <section class="choosePanFromImage-item">
-                <figure>
-                  <img src="./images/recommend3.png" alt="渋谷あんぱん">
-                </figure>
-                <h2>渋谷あんぱん</h2>
-                <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 渋谷駅</p>
-                <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="">あんぱん</a></p>
-                <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="#">@Barkey_Tokyo</a></p>
-                <div class="store-btn">
-                  <a class="waves-effect waves-light btn-large">
-                      <i class="material-icons store-icon">store</i>お店の詳細へ
-                  </a>
-                </div>
-              </section>
-            </div> <!-- col -->
-            <div class="col s12 m6 l4">
-              <section class="choosePanFromImage-item">
-                <figure>
-                  <img src="./images/recommend2.png" alt="ブリオッシュ">
-                </figure>
-                <h2>ブリオッシュ</h2>
-                <p class="position"><i class="material-icons location-icon-4mozi">location_on</i>最寄駅 六本木駅</p>
-                <p class="position"><i class="material-icons location-icon-4mozi">bookmark</i><a href="">ブリオッシュ</a></p>
-                <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="#">@Barkey_Tokyo</a></p>
-                <div class="store-btn">
-                  <a class="waves-effect waves-light btn-large">
-                      <i class="material-icons store-icon">store</i>お店の詳細へ
-                  </a>
-                </div>
-              </section>
-            </div> <!-- col -->
-            <div class="col s12 m6 l4">
-              <section class="choosePanFromImage-item">
-                <figure class="valign-wrapper">
-                  <img src="./images/choosePanFromImage1.png" alt="愛国あんぱん">
-                </figure>
-                <h2>愛国あんぱん</h2>
-                <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 蒲田駅</p>
-                <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="">あんぱん</a></p>
-                <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="#">@Barkey_Tokyo</a></p>
-                <div class="store-btn">
-                  <a class="waves-effect waves-light btn-large">
-                      <i class="material-icons store-icon">store</i>お店の詳細へ
-                  </a>
-                </div>
-              </section>
-            </div> <!-- col -->
-            <div class="col s12 m6 l4">
-              <section class="choosePanFromImage-item">
-                <figure>
-                  <img src="./images/recommend3.png" alt="渋谷あんぱん">
-                </figure>
-                <h2>渋谷あんぱん</h2>
-                <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 渋谷駅</p>
-                <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="">あんぱん</a></p>
-                <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="#">@Barkey_Tokyo</a></p>
-                <div class="store-btn">
-                  <a class="waves-effect waves-light btn-large">
-                      <i class="material-icons store-icon">store</i>お店の詳細へ
-                  </a>
-                </div>
-              </section>
-            </div> <!-- col -->
-            <div class="col s12 m6 l4">
-              <section class="choosePanFromImage-item">
-                <figure>
-                  <img src="./images/recommend2.png" alt="ブリオッシュ">
-                </figure>
-                <h2>ブリオッシュ</h2>
-                <p class="position"><i class="material-icons location-icon-4mozi">location_on</i>最寄駅 六本木駅</p>
-                <p class="position"><i class="material-icons location-icon-4mozi">bookmark</i><a href="">ブリオッシュ</a></p>
-                <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="#">@Barkey_Tokyo</a></p>
-                <div class="store-btn">
-                  <a class="waves-effect waves-light btn-large">
-                      <i class="material-icons store-icon">store</i>お店の詳細へ
-                  </a>
-                </div>
-              </section>
-            </div> <!-- col -->
+            @foreach ($pans as $pan)
+              <div class="col s12 m6 l4">
+                <section class="choosePanFromImage-item">
+                  <figure class="valign-wrapper">
+                    <img src="/storage/{{ $pan->image }}" alt="{!! nl2br(e($pan->panname)) !!}">
+                  </figure>
+                  <h2>{!! nl2br(e($pan->panname)) !!}</h2>
+                  <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 {!! nl2br(e($pan->closeststation)) !!}</p>
+                  <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="">あんぱん</a></p>
+                  <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="https://www.instagram.com/{!! nl2br(e($pan->instagramid)) !!}">{!! nl2br(e($pan->instagramid)) !!}</a></p>
+                  <div class="store-btn">
+                    <a class="waves-effect waves-light btn-large">
+                        <i class="material-icons store-icon">store</i>お店の詳細へ
+                    </a>
+                  </div>
+                </section>
+              </div> <!-- col -->
+            @endforeach
           </div>
           <div class="links row" id="links">
             <div class="col s12 m6 l6">
@@ -199,57 +121,11 @@
             </div>
           </div>
           <div class="tags" id="tags">
-            <h2><i class="material-icons">bookmark</i>店名</h2>
+            <h2><i class="material-icons">store</i>店名から探す</h2>
             <ul>
-              <li><a href="#">Andersen</a></li>
-              <li><a href="#">PAUL</a></li>
-              <li><a href="#">Rod</a></li>
-              <li><a href="#">HEART BREAD ANTIQUE</a></li>
-              <li><a href="#">VIRON</a></li>
-              <li><a href="#">ビゴの店</a></li>
-              <li><a href="#">キムラミルク</a></li>
-              <li><a href="#">メゾンカイザー</a></li>
-              <li><a href="#">デリフランス</a></li>
-              <li><a href="#">ジャンフランソワ</a></li>
-              <li><a href="#">ポンパドウル</a></li>
-              <li><a href="#">ラトリエデュパン</a></li>
-              <li><a href="#">PAUL</a></li>
-              <li><a href="#">Rod</a></li>
-              <li><a href="#">HEART BREAD ANTIQUE</a></li>
-              <li><a href="#">キムラミルク</a></li>
-              <li><a href="#">メゾンカイザー</a></li>
-              <li><a href="#">デリフランス</a></li>
-              <li><a href="#">ジャンフランソワ</a></li>
-              <li><a href="#">ポンパドウル</a></li>
-              <li><a href="#">ラトリエデュパン</a></li>
-              <li><a href="#">PAUL</a></li>
-              <li><a href="#">Rod</a></li>
-              <li><a href="#">HEART BREAD ANTIQUE</a></li>
-              <li><a href="#">VIRON</a></li>
-              <li><a href="#">ビゴの店</a></li>
-              <li><a href="#">メゾンカイザー</a></li>
-              <li><a href="#">デリフランス</a></li>
-              <li><a href="#">ジャンフランソワ</a></li>
-              <li><a href="#">ポンパドウル</a></li>
-              <li><a href="#">ラトリエデュパン</a></li>
-              <li><a href="#">PAUL</a></li>
-              <li><a href="#">Rod</a></li>
-              <li><a href="#">HEART BREAD ANTIQUE</a></li>
-              <li><a href="#">VIRON</a></li>
-              <li><a href="#">ビゴの店</a></li>
-              <li><a href="#">メゾンカイザー</a></li>
-              <li><a href="#">デリフランス</a></li>
-              <li><a href="#">ジャンフランソワ</a></li>
-              <li><a href="#">ポンパドウル</a></li>
-              <li><a href="#">ラトリエデュパン</a></li>
-              <li><a href="#">HEART BREAD ANTIQUE</a></li>
-              <li><a href="#">VIRON</a></li>
-              <li><a href="#">Rod</a></li>
-              <li><a href="#">VIRON</a></li>
-              <li><a href="#">ビゴの店</a></li>
-              <li><a href="#">メゾンカイザー</a></li>
-              <li><a href="#">デリフランス</a></li>
-              <li><a href="#">ジャンフランソワ</a></li>
+              @foreach ($stores as $store)
+              <li><a href="/store/{!! nl2br(e(strtolower($store->storeName))) !!}"><i class="material-icons store-icon">store</i>{!! nl2br(e($store->storeName)) !!}</a></li>
+              @endforeach
             </ul>
           </div>
 @endsection

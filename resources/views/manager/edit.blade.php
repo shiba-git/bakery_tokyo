@@ -1,0 +1,97 @@
+@extends('layout.template')
+@section('title', '更新 |')
+@section('contents')
+      <div class="main-wrap">
+        <div class="container">
+          <div class="row pansCreate">
+            <form id="pansCreate" action="{{ url('manager/upload', ['id' => $pan->id]) }}" method="POST" enctype="multipart/form-data">
+              @method('PUT')
+              @csrf
+              
+                  <div class="col s12">
+                    <img src="/storage/{{$pan->image}}" alt="" width="100%" style="margin: 10px auto; max-width: 300px;">
+                  </div>
+                  <div class="col s12">
+                    <p class="label">パン画像<span style="color:red">※</span></p>
+                    <div class="input-file-gr edit-upload">
+                      <div class="input-file">
+                        <label for="pansCreateImage" id="pansCreateImageLabel">
+                          アップロード<input type="file" name="image" id="pansCreateImage" value="">
+                        </lebel>
+                      </div>
+                      <div class="filename">
+                      選択されていません
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6 l6">
+                    <label for="permit">
+                      許可
+                    </label>
+                    <select id="permit" name="permit" value="{!! nl2br(e($pan->permit)) !!}">
+                      <option value="0">許可しない。</option>
+                      <option value="1">許可する</option>
+                    </select>
+                  </div>
+                  <div class="col s12 m6 l6">
+                    <label for="storename">
+                      パン屋の店名<span style="color:red">※</span><input type="text" name="storename" placeholder="店名" autocomplete="off" value="{!! nl2br(e($pan->storename)) !!}">
+                    </label>
+                  </div>
+                  <div class="col s12 m6 l6">
+                    <label for="pansname">
+                      パンの名前<span style="color:red">※</span><input type="text" name="panname" placeholder="パンの名前" autocomplete="off" value="{!! nl2br(e($pan->panname)) !!}">
+                    </label>
+                  </div>
+                  <div class="col s12 m6 l6">
+                    <label for="closeststation">
+                      最寄り駅<span style="color:red">※</span><input type="text" name="closeststation" placeholder="東京駅" autocomplete="off" value="{!! nl2br(e($pan->closeststation)) !!}">
+                    </label>
+                  </div>
+                  <div class="col s12 m6 l6">
+                    <label for="storepath">
+                      お店のパス(ぐるなび)<span style="color:red">※</span><input type="text" name="storepath" placeholder="https://" autocomplete="off" value="{!! nl2br(e($pan->storepath)) !!}">
+                    </label>
+                  </div>
+                  <div class="col s12 m6 l6">
+                    <label for="sns">
+                      Instagram<span style="color:red"></span><input type="text" name="instagramid" placeholder="例） @Barkey_Tokyo" autocomplete="off" value="{!! nl2br(e($pan->instagramid)) !!}">
+                    </label>
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <label for="permit">
+                      タグID
+                    </label>
+                    <select name="tag_id">
+                      <option value="0" selected>1</option>
+                      <option value="1">2</option>
+                    </select>
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <label for="store">
+                      ストアID
+                    </label>
+                    <select id="storeid" name="store_id">
+                      @foreach ($stores as $store)
+                        <option value="{!! nl2br(e($store->id)) !!}">{!! nl2br(e($store->storeName)) !!}</option>
+                      @endforeach
+                    </select>
+                  </div>
+              <div class="col s6">
+                <a href="{{ url('manager') }}" value="投稿する" class="createSubmit" style="padding: 11px 0; display: block;">戻る</a>
+              </div>
+              <div class="col s6">
+                <input type="submit" value="更新する" class="createSubmit"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        var v = parseInt("{{$pan->permit}}");
+        document.getElementById('permit').options[v].selected = true;
+        var v = parseInt("{{$pan->store_id}}") - 1;
+        document.getElementById('storeid').options[v].selected = true;
+      </script>
+@endsection
+

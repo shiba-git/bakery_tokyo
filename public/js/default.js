@@ -11,10 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
   $('.col > .searchStoreBox-item > .searchStoreBox-itemWrap').matchHeight();
   $('.card-image').matchHeight();
 
-  //pan create
+  //pan create edit
   $("input[type='file']").on('change',function(){
      var file = $(this).prop('files')[0];
      $(".filename").html(file.name);
+  });
+  //edit 
+  $(document).ready(function(){
+      $('select').formSelect();
   });
   // // location Information
   // var location = document.getElementById('locationInformation');

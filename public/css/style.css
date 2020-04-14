@@ -16,6 +16,23 @@ header > nav{
 .btn-large:focus{
   background-color: rgb(231, 135, 40);
 }
+.btn2-style{
+  text-align: center;
+  margin-top: 30px;
+}
+.btn2-style a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color:  rgb(186, 27, 45);
+}
+.select-wrapper input.select-dropdown:focus{
+  border-bottom: 1px solid rgb(231, 135, 40);
+}
+.dropdown-content li>a, .dropdown-content li>span{
+  color: rgb(231, 135, 40);
+}
 input:not([type]):focus:not([readonly]),
 input[type=text]:not(.browser-default):focus:not([readonly]){
   border-bottom: 1px solid rgb(231, 135, 40);
@@ -86,7 +103,7 @@ nav .brand-logo{
 #top-bg{
   width: 100%;
   height: 80vh;
-  background-image: url("../images/top.jpg");
+  background-image: url("/images/top.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,7 +198,7 @@ nav .brand-logo{
   left: calc(50% - 72px);
   width: 20px;
   height: 20px;
-  background: url(../images/en.png) no-repeat;
+  background: url(/images/en.png) no-repeat;
   background-size: 20px;
 }
 @media only screen and (max-width: 992px) {
@@ -434,7 +451,7 @@ nav .brand-logo{
   border-radius: 3px;
   font-size: 20px;
   text-align: center;
-  background-image: url("../images/btn-bg.jpg");
+  background-image: url("/images/btn-bg.jpg");
   background-size: cover;
   color: #fff;
 }
@@ -453,13 +470,31 @@ nav .brand-logo{
   color: #fff;
 }
 /* tags */
+#tags{
+  margin-top: 50px;
+}
 #tags ul{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 #tags ul li{
-  margin-right: 30px;
+  margin: 5px;
+}
+#tags ul li > a{
+  display: block;
+  position: relative;
+  padding: 5px 15px 5px 30px;
+  border-radius: 12px;
+  background-color: #E4E4E4;
+  color: rgba(0,0,0,0.87);
+}
+#tags ul li > a > .store-icon{
+  position: absolute;
+  color: rgba(0,0,0,0.87);
+  left: 7px;
+  top: 6px;
+  font-size: 20px;
 }
 /* pans index */
 #choosePanFromImageUpside, #choosePanFromImageBottom{
@@ -565,7 +600,7 @@ input[type="file"]{
 
 }
 .error-item{
-  position: relative; 
+  position: relative;
   color: rgb(186, 27, 45);
   padding: 5px 0;
   padding-left: 25px;
@@ -576,4 +611,9 @@ input[type="file"]{
   position: absolute;
   left: calc(0px);
   top: 6px;
+}
+
+/* edit */
+.edit-upload{
+  display: block;
 }

@@ -17,4 +17,9 @@ class Pan extends Model
         'tag_id',
         'store_id',
     ];
+
+    public function store()
+    {
+        return $this->belongsTo('App\Store');
+    }
 }
