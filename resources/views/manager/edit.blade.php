@@ -58,22 +58,35 @@
                       Instagram<span style="color:red"></span><input type="text" name="instagramid" placeholder="例） @Barkey_Tokyo" autocomplete="off" value="{!! nl2br(e($pan->instagramid)) !!}">
                     </label>
                   </div>
-                  <div class="col s6 m6 l6">
-                    <label for="permit">
-                      タグID
+                  <div class="col s12 m6 l6">
+                    <label for="tag">
+                    タグ
                     </label>
-                    <select name="tag_id">
-                      <option value="0" selected>1</option>
-                      <option value="1">2</option>
-                    </select>
+                    <div class="create-label-set">
+                      @foreach ($tags as $tag)
+                        <input type="checkbox" name="tag[]" value="{!! nl2br(e($tag->id)) !!}" 
+                        id="tag-{!! nl2br(e($tag->id)) !!}" {{ is_array($pan->tags->all()) && in_array($tag->id, $pan->tags->pluck('id')->all(), true)? 'checked="checked"' : '' }}>
+                        <label for="tag-{!! nl2br(e($tag->id)) !!}" class="label create-label">{!! nl2br(e($tag->tagName)) !!}</label>
+                      @endforeach
+                    </div>
                   </div>
-                  <div class="col s6 m6 l6">
+                  <div class="col s6">
                     <label for="store">
                       ストアID
                     </label>
                     <select id="storeid" name="store_id">
                       @foreach ($stores as $store)
                         <option value="{!! nl2br(e($store->id)) !!}">{!! nl2br(e($store->storeName)) !!}</option>
+                      @endforeach
+                    </select>
+                  </div>
+                  <div class="col s6">
+                    <label for="genre">
+                      ジャンルID
+                    </label>
+                    <select id="genreid" name="genre_id">
+                      @foreach ($genres as $genre)
+                        <option value="{!! nl2br(e($genre->id)) !!}">{!! nl2br(e($genre->genreName)) !!}</option>
                       @endforeach
                     </select>
                   </div>

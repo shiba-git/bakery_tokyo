@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Pan;
 use App\Store;
+use App\Tag;
+use App\Genre;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -18,6 +20,8 @@ class HomeController extends Controller
     {
         $pans = Pan::all()->random(6);
         $stores = Store::orderBy('created_at', 'desc')->get();
-        return view('top', ['stores' => $stores, 'pans' => $pans]);
+        $tags = Tag::orderBy('created_at', 'desc')->get();
+        $genres = Genre::all();
+        return view('top', ['stores' => $stores, 'pans' => $pans, 'tags' => $tags, 'genres' => $genres]);
     }
 }

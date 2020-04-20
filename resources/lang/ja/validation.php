@@ -106,7 +106,9 @@ return [
     'attributes' => [
         'image'=>'画像',
         'panname'=>'パン名',
-        'storename'=>'店名',
+        'storeName'=>'店名',
+        'storename' => '店名',
+        'tag' => 'タグ',
     ],
 
 ];

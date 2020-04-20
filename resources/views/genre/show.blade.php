@@ -1,5 +1,5 @@
 @extends('layout.template')
-@section('title', $storeName)
+@section('title', $genreName )
 @section('contents')
       <div class="main-wrap">
         <div class="container">
@@ -7,12 +7,12 @@
             <div class="nav-wrapper">
               <div class="col s12">
                 <a href="#!" class="breadcrumb">Top</a>
-                <a href="#!" class="breadcrumb">{!! nl2br(e($storeName)) !!}</a>
+                <a href="#!" class="breadcrumb">{!! nl2br(e($genreName)) !!}</a>
               </div>
             </div>
           </nav>
           <div class="choosePanFromImage row" id="choosePanFromImageUpside">
-            <h2><i class="material-icons">store</i>{!! nl2br(e($storeName)) !!}</h2>
+            <h2><i class="material-icons">store</i>{!! nl2br(e($genreName)) !!}</h2>
             <!-- <div class="store-btn">
               <a class="waves-effect waves-light btn-large">
                 <i class="material-icons store-icon">store</i>お店の詳細へ
@@ -26,6 +26,12 @@
                       <img src="/storage/{!! nl2br(e($pan->image)) !!}" alt="{!! nl2br(e($pan->name)) !!}">
                     </figure>
                     <h2>{!! nl2br(e($pan->panname)) !!}</h2>
+                    <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 {!! nl2br(e($pan->closeststation)) !!}</p>
+                    <div class="store-btn">
+                      <a class="waves-effect waves-light btn-large">
+                          <i class="material-icons store-icon">store</i>お店の詳細へ
+                      </a>
+                    </div>
                   </section>
                 </div> <!-- col -->
               @endforeach

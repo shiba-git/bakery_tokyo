@@ -1,5 +1,5 @@
 @extends('layout.template')
-@section('title', 'ストア生成 |')
+@section('title', 'タグ生成 |')
 @section('contents')
       <div class="main-wrap">
         <div class="container">
@@ -7,13 +7,13 @@
             <div class="nav-wrapper">
               <div class="col s12">
                 <a href="#!" class="breadcrumb">Top</a>
-                <a href="#!" class="breadcrumb">Store</a>
+                <a href="#!" class="breadcrumb">Genre</a>
                 <a href="#!" class="breadcrumb">Create</a>
               </div>
             </div>
           </nav>
           <div class="row pansCreate">
-            <form id="pansCreate" action="{{ url('manager/store/complete') }}" method="POST" enctype="multipart/form-data">
+            <form id="pansCreate" action="{{ url('manager/genre/complete') }}" method="POST" enctype="multipart/form-data">
               @csrf
               
               @if ($errors->any())
@@ -24,8 +24,8 @@
               </ul>
               @endif
               <div class="col s12 m6 l6">
-                <label for="storename">
-                  店名<span style="color:red">※</span><input type="text" name="storeName" placeholder="店名"value="">
+                <label for="genrename">
+                  ジャンル名<span style="color:red">※</span><input type="text" name="genreName" placeholder="ジャンル名"value="">
                 </label>
               </div>
               <div class="col s12 l12">

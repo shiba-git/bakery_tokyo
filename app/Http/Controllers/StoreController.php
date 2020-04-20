@@ -15,6 +15,12 @@ class StoreController extends Controller
         $pans = $panspage->chunk(6);
         return view('store.show', ["storeName" => $storeName, "panspage" => $panspage, "pans" => $pans]);        
     }
+    public function delete($id)
+    {
+        $store = Store::findOrFail($id);
+        $store->delete();
+        return redirect('manager');
+    }
     public function create()
     {
         return view('store.create');

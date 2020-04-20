@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Pan;
 use App\Store;
+use App\Tag;
+use App\Genre;
 use Validator;
 use Illuminate\Http\Request;
 
@@ -26,6 +28,13 @@ class PanController extends Controller
     	$pans = Pan::orderBy('created_at', 'desc')->paginate(12); //分割する必要がない,変数に気を付ける
         return view('manager.index', ['pans' => $pans]);
     }
+    public function list()
+    {
+        $stores = Store::all();
+        $tags = Tag::all();
+        $genres = Genre::all();
+        return view('manager.list',['stores'=> $stores, 'tags' => $tags, 'genres' => $genres]);
+    }
     public function delete($id)
     {
     	$pan = Pan::findOrFail($id);
@@ -36,7 +45,9 @@ class PanController extends Controller
     {
     	$pan = Pan::findOrFail($id);
         $stores = Store::all();
-        return view('manager.edit', ['pan' => $pan, 'stores'=> $stores]);
+        $tags = Tag::all();
+        $genres = Genre::all();
+        return view('manager.edit', ['pan' => $pan, 'stores'=> $stores, 'tags' => $tags, 'genres' => $genres]);
     }
     public function upload(Request $request, $id)
     {
@@ -46,14 +57,16 @@ class PanController extends Controller
             $imagepath = $request->image->store('public');
             $imagepath_read = str_replace('public/', '/storage/', $imagepath);
             $pan->image = $imagepath_read;
-        }
+        } //パスを変更
+        $pan->tags()->sync($request->tag);
         $pan->save();
         return redirect('manager')
             ->with(['pan' => $pan]); //元のページ戻す
     }
     public function create()
     {
-        return view('pan.create');
+        $tags = Tag::all();
+        return view('pan.create', ['tags' => $tags]);
     }
     public function complete(Request $request)
     {
@@ -61,9 +74,13 @@ class PanController extends Controller
             'image' =>'required|file|image|mimes:jpeg,png',
             'storename' => 'required|max:100',
         	'panname' => 'required|max:100',
+            'tag' => 'required',
         ]);
-
+        
         if($Validator->fails()){
+            $all = $request->all();
+            // var_dump($request->tag);
+            // echo $all;
         	return redirect('pan/create')
                 ->withErrors($Validator)
                 ->withInput($request->all);
@@ -73,12 +90,14 @@ class PanController extends Controller
             $file_name_date = $date . $file_name;
 	    	$imagepath = $request->file('image')->storeAs('public/', $file_name_date);
 	    	// $imagepath_read = str_replace('public/', '/storage/', $imagepath);
-	    	Pan::create([
+
+	    	$id = Pan::create([
 	    		'image' => $file_name_date,
 	    		'storename' => $request->storename,
 	    		'panname' => $request->panname,
                 'instagramid'=> $request->instagramid,
 	    	]);
+            $id->tags()->sync($request->tag);
 	    	return view('pan/complete');
         }
     }

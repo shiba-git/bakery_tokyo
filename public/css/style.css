@@ -8,6 +8,32 @@ h1, h2{
   font-size: .8rem;
   color: #9e9e9e;
 }
+.flex{
+  display: flex;
+}
+input[type="checkbox"]:checked + label {
+  background: rgb(186, 27, 45);
+  color: #ffffff;
+}
+.create-label-set{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.create-label{
+  display: block; /* ブロックレベル要素化する */
+  margin: 2px 3px 2px 3px;
+  text-align: center; /* テキストのセンタリングを指定する */
+  padding: 10px 0;
+  padding-left: 7px; /* ラベル内左側の余白を指定する */
+  padding-right: 7px; /* ラベル内右側の余白を指定する */
+  cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+  color: rgb(186, 27, 45); /* フォントの色を指定 */
+  border: 2px solid rgb(186, 27, 45);/* ラベルの境界線を実線で指定する */
+  border-radius: 5px; /* 角丸を指定する */
+}
 header > nav{
   background-color: rgb(186, 27, 45);
 }
@@ -18,9 +44,13 @@ header > nav{
 }
 .btn2-style{
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  display: flex;
 }
-.btn2-style a{
+.btn2-style > .col{
+  margin: 0px;
+}
+.btn2-style > .col > a{
   color: #fff;
   display: block;
   width: 100%;
@@ -255,8 +285,27 @@ nav .brand-logo{
 .i-insta{
   position: absolute;
   top: 4px;
-  left: calc(50% - 87px);
+  left: calc(50% - 79px);
   font-size: 21px;
+}
+/* pan ジャンルtag */
+.tags ul li > a.i-genre{
+  padding: 5px 15px 5px 30px;
+}
+.i-tag-genre{
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  color: #e1b43e;
+}
+.genre-item{
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  font-size: 14px;
+}
+.pos-m{
+  margin: 0px;
 }
 .searchStoreBox-text > i{
   font-size: 20px;
@@ -470,18 +519,20 @@ nav .brand-logo{
   color: #fff;
 }
 /* tags */
-#tags{
+.tags{
   margin-top: 50px;
 }
-#tags ul{
+.tags ul{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-#tags ul li{
+.tags ul li{
   margin: 5px;
 }
-#tags ul li > a{
+.tags ul li > a,
+.tags ul li.list,
+.tags ul li.fas-list{
   display: block;
   position: relative;
   padding: 5px 15px 5px 30px;
@@ -489,13 +540,37 @@ nav .brand-logo{
   background-color: #E4E4E4;
   color: rgba(0,0,0,0.87);
 }
-#tags ul li > a > .store-icon{
+.tags ul li.list > p{
+  margin: 0px;
+}
+.tags ul li > a > .store-icon,
+.tags ul li p > .store-icon{
   position: absolute;
   color: rgba(0,0,0,0.87);
   left: 7px;
   top: 6px;
   font-size: 20px;
 }
+
+/* list */
+.tags ul li.list,
+.tags ul li.fas-list{
+  padding: 5px 37px 5px 31px;
+}
+.deleteLabel{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 11px;
+  right: 11px;
+  background-image: url(/images/close.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.deleteLabel > input{
+  display: none;
+}
+
 /* pans index */
 #choosePanFromImageUpside, #choosePanFromImageBottom{
   padding-top: 0;

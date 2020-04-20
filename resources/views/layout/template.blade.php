@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel=”icon” href="{{ asset('images/favicon.ico') }}">
     <link rel="profile"href="">
     <link rel="pingback" href="">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <title>@yield('title') BarkeyTokyo</title>
+    <title>@yield('title') | BarkeyTokyo</title>
   </head>
   <body>
     <header class="navbar-fixed">
@@ -46,7 +46,7 @@
     </main>
     <footer>
       <div class="footer-inner">
-        <p class="copyright"><small>@Copyright2020 Shiba-WebSite.All Rights Reserved.</small></p>
+        <p class="copyright"><small>@Copyright2020 BakeryTokyo.All Rights Reserved.</small></p>
       </div>
     </footer>
     <script
