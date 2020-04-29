@@ -3,14 +3,7 @@
 @section('contents')
       <div class="main-wrap">
         <div class="container">
-          <nav id="breadcrumb">
-            <div class="nav-wrapper">
-              <div class="col s12">
-                <a href="#!" class="breadcrumb">Top</a>
-                <a href="#!" class="breadcrumb">Pans</a>
-              </div>
-            </div>
-          </nav>
+          {{ Breadcrumbs::render('pan') }}
           <div class="choosePanFromImage row" id="choosePanFromImageUpside">
           	@if(!empty($pans[0]))
 	            @foreach ($pans[0] as $pan)

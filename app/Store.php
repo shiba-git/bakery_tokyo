@@ -8,6 +8,7 @@ class Store extends Model
 {
 	protected $fillable = [
         'storeName',
+        'api_id',
     ];
 	public function pans()
 	{

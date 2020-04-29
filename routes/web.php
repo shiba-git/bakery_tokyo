@@ -16,11 +16,13 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', 'HomeController@index')->name('top');;
+Route::get('/', 'HomeController@index')->name('top');
 Route::get('/pan/', 'PanController@index')->name('pan.index');
 Route::get('/pan/create/', 'PanController@create')->name('pan.create');
 Route::post('/pan/complete/', 'PanController@complete')->name('pan.complete');
 
+// key 
+Route::get('/key/', 'HomeController@key')->name('key.index');
 // store 
 Route::get('/store/{storeName}/', 'StoreController@show')->name('store.show');
 
@@ -31,7 +33,8 @@ Route::get('/tag/{tagName}/', 'TagController@show')->name('tag.show');
 Route::get('/genre/{genreName}/', 'GenreController@show')->name('genre.show');
 
 //search
-Route::get('/search/', 'SearchController@latlen')->name('search.latlen');
+Route::get('/search/location/', 'SearchController@latlen')->name('search.latlen');
+Route::get('/search/word/', 'SearchController@word')->name('search.word');
 
 // manager
 Route::get('/manager/', 'PanController@manager')->name('manager');

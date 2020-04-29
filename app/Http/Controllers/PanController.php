@@ -55,7 +55,7 @@ class PanController extends Controller
         $pan->fill($request->all());
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
             $imagepath = $request->image->store('public');
-            $imagepath_read = str_replace('public/', '/storage/', $imagepath);
+            $imagepath_read = str_replace('public/', '', $imagepath);
             $pan->image = $imagepath_read;
         } //パスを変更
         $pan->tags()->sync($request->tag);
