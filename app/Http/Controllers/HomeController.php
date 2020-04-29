@@ -24,4 +24,9 @@ class HomeController extends Controller
         $genres = Genre::all();
         return view('top', ['stores' => $stores, 'pans' => $pans, 'tags' => $tags, 'genres' => $genres]);
     }
+    public function key()
+    {
+        $count = Pan::all()->where('permit', '1')->count();
+        return view('key.index', ['count' => $count]);
+    }
 }

@@ -3,15 +3,7 @@
 @section('contents')
       <div class="main-wrap">
         <div class="container">
-          <nav id="breadcrumb">
-            <div class="nav-wrapper">
-              <div class="col s12">
-                <a href="#!" class="breadcrumb">Top</a>
-                <a href="#!" class="breadcrumb">Pans</a>
-                <a href="#!" class="breadcrumb">Create</a>
-              </div>
-            </div>
-          </nav>
+                {{ Breadcrumbs::render('create') }}
           <div class="row pansCreate">
             <form id="pansCreate" action="{{ url('pan/complete') }}" method="POST" enctype="multipart/form-data">
               @csrf

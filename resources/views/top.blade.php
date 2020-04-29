@@ -9,9 +9,10 @@
                 </div>
               </div>
                 <div class="col s12">
-                  <form>
+                  <form action="{{ url('/search/word/?page=1') }}" method="GET">
                     <div class="input-field"><!-- icon position -->
-                      <input id="search" type="text" placeholder="店名や場所で検索" autocomplete="off">
+                      <input type="hidden" name="page" value="1">
+                      <input id="search" name="freeword" type="text" placeholder="店名や場所で検索" autocomplete="off" value="" required>
                       <label class="right label-icon" for="search">
                         <i class="material-icons search-icon">search</i>
                       </label>
@@ -29,7 +30,7 @@
                   </a>
                 </div>
                 <div class="col s4 m4 l4">
-                  <a href="{{ url('/search/?latlng=35.7466112-139.624448') }}" id="locationInformation"class="waves-effect waves-light btn-large btn-field-position">
+                  <a href="{{ url('/search/location/?page=1&lat=35.672776&lng=139.768903') }}" id="location-search"class="waves-effect waves-light btn-large btn-field-position">
                     <i class="material-icons location-icon">location_on</i>近く<br class="visible-sp">のパン屋
                   </a>
                 </div>
@@ -37,6 +38,40 @@
       </div>
       <div class="main-wrap">
         <div class="container">
+          <div class="recommend row" id="tokyopan">
+            <h2><i class="material-icons">local_dining</i>目的地 ✖ 好きなパンを探す</h2>
+            <div class="cover">
+              <div class="col s12 l5">
+                <select class="tokyo-v" disabled>
+                  <option value="1">目的地を選択してください。</option>
+                </select>
+              </div>
+              <div class="col s12 l5">
+                <select class="pan-v" disabled>
+                  <option value="1">食べたいパンを選択してください。</option>
+                </select>
+              </div>
+              <div class="col s12 l2">
+                <div class="store-btn">
+                    <!-- waves-effect waves-light -->
+                  <a class="btn-large">
+                    <i class="material-icons search-icon">search</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="key-description">
+              <p class="cover-img">「目的地 ✖ 好きなパンを探す」をご利用出来るまで。<br class="visible-pc">ご協力お願い致します。</p>
+            </div>
+            <div class="key-btn">
+	            <div class="store-btn">
+	              <a href="{{ url('key') }}"class="waves-effect waves-light btn-large key">
+	                <i class="key-icon"></i>
+	                  詳しくはこちら
+	              </a>
+	            </div>
+          	</div>
+          </div>
           <div class="recommend row" id="recommend">
             <h2><i class="material-icons">local_dining</i>おススメのパン</h2>
             <p class="description"><a href="https://www.instagram.com/bakery_tokyo/" target="_blank">BakeryTokyoのインスタグラム</a>で評価、いいね！が良かったパンを掲載しています。</p>
@@ -147,5 +182,19 @@
               </li>
               @endforeach
             </ul>
+          </div>
+          <div class="tags">
+            <h2><p class="position pos-m"><i class="fas fa-comment i-tag-genre fa-lg"></i>繋がる</p></h2>
+            <div class="row">
+              <div class="col s12 m6 l6 top-sns">
+                <a href="https://www.instagram.com/bakery_tokyo/" target="_blank" class="btn2">
+                  <i class="fab fa-instagram"></i><span>bakery_tokyo</span>
+                </a>
+              </div>
+              <div class="col s12 m6 l6 top-sns">
+                <a href="https://twitter.com/bakery_tokyo" target="_blank" class="btn2 twi_btn2">
+                  <i class="fab fa-twitter"></i><span>bakery_tokyo</span>
+                </a>
+              </div>
           </div>
 @endsection

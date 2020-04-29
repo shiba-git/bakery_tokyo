@@ -17,16 +17,16 @@ document.addEventListener('DOMContentLoaded', function() {
      $(".filename").html(file.name);
   });
   //edit 
-  $(document).ready(function(){
-      $('select').formSelect();
-  });
+  $('select#permit').formSelect();
+  $('select#storeid').formSelect();
+  $('select#genreid').formSelect();
   // delete
   $(".deletebtn").on("submit", function(){
     return confirm("本当に削除してよろしいでしょうか？");
   });
   
   // // location locationInformation
-  var location = document.getElementById('locationInformation');
+  var location = document.getElementById('location-search');
   // // location click Event
   location.addEventListener("click", function(){
   

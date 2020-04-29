@@ -116,6 +116,7 @@ nav .brand-logo{
   .top-site-about{
     font-size: 13px;
     font-weight: bold;
+    padding: 0 17px;
   }
   #top .visible-sp{
     display: none;
@@ -192,6 +193,90 @@ nav .brand-logo{
     left: 10px;
   }
 }
+
+#tokyopan .col{
+  margin-top: 15px !important;
+}
+#tokyopan select{
+  display: block;
+  border: 1px solid rgb(231, 135, 40);
+}
+#tokyopan .store-btn{
+  margin-top: 0px;
+}
+#tokyopan .store-btn > a{
+  box-shadow: none;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+}
+#tokyopan .btn-large i{
+  font-size: 2.2rem;
+}
+#tokyopan .cover{
+  position: relative;
+  background: #fff;
+  opacity: 0.1;
+  height: 60px;
+}
+@media only screen and (max-width: 992px) {
+  #tokyopan .cover{
+    height: 170px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #tokyopan .cover{
+    height: 173px;
+  }
+}
+#tokyopan .btn-large:hover{
+  background-color: rgb(186, 27, 45);
+}
+.key-btn{
+  width: 30%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 992px) {
+  .key-btn{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .key-btn{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.key-description{
+  margin-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.cover-img{
+  font-size: 18px;
+}
+@media only screen and (max-width: 600px) {
+  .cover-img{
+    font-size: 12px;
+  }
+}
+.key{
+  position: relative;
+}
+.key-icon{
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 80px);
+  background-image: url('/images/key.png');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+
+
 .btn-field-position, .position{
   position: relative;
 }
@@ -282,6 +367,62 @@ nav .brand-logo{
   top: 42px;
   right: calc(1%);
 }
+.top-sns{
+  margin-top: 15px !important;
+}
+@media only screen and (max-width: 600px) {
+  .top-sns{
+    margin-top: 10px !important;
+  }
+}
+
+.btn2{/*ボタンの下地*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  position: relative;
+  display: inline-block;
+  height: 70px;/*高さ*/
+  width: 100%;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 25px;/*文字のサイズ*/
+  line-height: 70px;/*高さと合わせる*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+.btn2:before{/*グラデーション②*/
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;/*全体を覆う*/
+  height: 100%;/*全体を覆う*/
+  background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+.btn2 .fa-instagram,
+.btn2 .fa-twitter{/*アイコン*/
+  font-size: 35px;/*アイコンサイズ*/
+  position: relative;
+  top: 4px;/*アイコン位置の微調整*/
+  left: -10px;
+}
+.btn2 span {/*テキスト*/
+  display:inline-block;
+  font-weight: 400;
+  position: relative;
+  transition: .5s
+}
+.btn2.twi_btn2{/*ボタンの下地*/
+  background: #50abf1;
+  background: #50abf1;/*グラデーション①*/
+}
+.btn2.twi_btn2:before{/*グラデーション②*/
+  background: #50abf1;
+  background: #50abf1;
+}
+
 .i-insta{
   position: absolute;
   top: 4px;
@@ -320,6 +461,14 @@ nav .brand-logo{
 @media only screen and (max-width: 600px) {
   .visible-sp{
     display: block;
+  }
+}
+.visible-pc{
+  display: block;
+}
+@media only screen and (max-width: 600px) {
+  .visible-pc{
+    display: none;
   }
 }
 .sidenav-overlay{
@@ -599,6 +748,11 @@ nav .brand-logo{
   box-shadow: none;
   background-color: transparent;
 }
+@media only screen and (max-width: 600px) {
+  #breadcrumb .col > a{
+    font-size: 12px;
+  }
+}
 #breadcrumb .col{
   margin-top: 0px;
 }
@@ -692,3 +846,18 @@ input[type="file"]{
 .edit-upload{
   display: block;
 }
+/* store-description */
+#store-description{
+  padding: 10px 5px;
+  margin-top: 10px;
+  border: 1px solid rgb(225 180 062);
+}
+#store-description p{
+  margin: 5px;
+}
+#store-description .store-btn{
+  margin-top: 5px;
+}
+#store-description .store-btn > a{
+  width: 100%;
+}c

@@ -13,7 +13,26 @@ class StoreController extends Controller
         $pansid = Store::where('storeName', $storeName)->first()->id;
         $panspage = Store::find($pansid)->pans()->where('permit', 1)->paginate(12);
         $pans = $panspage->chunk(6);
-        return view('store.show', ["storeName" => $storeName, "panspage" => $panspage, "pans" => $pans]);        
+
+        $api_id = Store::where('storeName', $storeName)->first()->api_id;
+
+        $url = 'https://api.gnavi.co.jp/RestSearchAPI/v3/';
+        $keyid = config('app.api_key');
+
+        $client = new \GuzzleHttp\Client();
+        $response = $client->request("GET", $url, 
+            [ 'query' => 
+                [
+                 'keyid' => $keyid,
+                 'id' => $api_id,
+                ]
+            ] 
+        );
+
+        $posts = $response->getBody();
+        $posts = json_decode($posts, true);
+
+        return view('store.show', ["storeName" => $storeName, "panspage" => $panspage, "pans" => $pans, "posts" => $posts]);
     }
     public function delete($id)
     {
@@ -29,6 +48,7 @@ class StoreController extends Controller
     {
 		$Validator = Validator::make($request->all(), [
             'storeName' =>'required|max:100',
+            'api_id' =>'required|max:100',
         ]);
 
         if($Validator->fails()){
@@ -38,6 +58,7 @@ class StoreController extends Controller
         }else{
 	    	Store::create([
 	    		'storeName' => $request->storeName,
+                'api_id' => $request->api_id,
 	    	]);
 	    	return redirect('manager');
         }

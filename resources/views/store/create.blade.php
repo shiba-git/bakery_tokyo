@@ -28,12 +28,17 @@
                   店名<span style="color:red">※</span><input type="text" name="storeName" placeholder="店名"value="">
                 </label>
               </div>
+              <div class="col s12 m6 l6">
+                <label for="storename">
+                  API_ID<span style="color:red">※</span><input type="text" name="api_id" placeholder="API"value="">
+                </label>
+              </div>
               <div class="col s12 l12">
                 <div class="col s6">
                   <a href="{{ url('manager') }}" value="投稿する" class="createSubmit" style="padding: 11px 0; display: block;">戻る</a>
                 </div>
                 <div class="col s6">
-                  <input type="submit" value="投稿する" class="createSubmit"/>
+                  <input type="submit" value="作成する" class="createSubmit"/>
                 </div>
               </div>
             </form>
