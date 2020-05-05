@@ -60,9 +60,9 @@ class PanController extends Controller
             $date = date("Ymd_Hi_");
             $file_name_date = $date . $file_name;
             $file = $request->file('image');
-            $imagepath = Storage::disk('s3')->putFileAs('/storage/', $file, $file_name_date, 'public');
-            $pan->image = $imagepath;
-        } //パスを変更
+            $imagepathS3 = Storage::disk('s3')->putFileAs('/storage', $file, $file_name_date, 'public');
+            $imagepath = str_replace('storage/', '', $imagepathS3);
+            $pan->image = $imagepath;        } //パスを変更
         $pan->tags()->sync($request->tag);
         $pan->save();
         return redirect('manager')
