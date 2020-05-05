@@ -9,6 +9,8 @@ use App\Tag;
 use App\Genre;
 use Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Contracts\Filesystem\Filesystem;
 
 class PanController extends Controller
 {
@@ -54,9 +56,12 @@ class PanController extends Controller
         $pan = Pan::findOrFail($id);
         $pan->fill($request->all());
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
-            $imagepath = $request->image->store('public');
-            $imagepath_read = str_replace('public/', '', $imagepath);
-            $pan->image = $imagepath_read;
+            $file_name = $request->file('image')->getClientOriginalName();
+            $date = date("Ymd_Hi_");
+            $file_name_date = $date . $file_name;
+            $file = $request->file('image');
+            $imagepath = Storage::disk('s3')->putFileAs('/storage/', $file, $file_name_date, 'public');
+            $pan->image = $imagepath;
         } //パスを変更
         $pan->tags()->sync($request->tag);
         $pan->save();
@@ -88,7 +93,10 @@ class PanController extends Controller
             $file_name = $request->file('image')->getClientOriginalName();
             $date = date("Ymd_Hi_");
             $file_name_date = $date . $file_name;
-	    	$imagepath = $request->file('image')->storeAs('public/', $file_name_date);
+            $file = $request->file('image');
+            //$path = Storage::disk('s3')->putFileAs('/', $file, 'hoge.jpg', 'public');
+	    	//$imagepath = $request->file('image')->storeAs('public/', $file_name_date);
+            $imagepath = Storage::disk('s3')->putFileAs('/storage/', $file, $file_name_date, 'public');
 	    	// $imagepath_read = str_replace('public/', '/storage/', $imagepath);
 
 	    	$id = Pan::create([

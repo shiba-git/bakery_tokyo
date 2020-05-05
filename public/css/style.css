@@ -298,13 +298,13 @@ nav .brand-logo{
 .location-icon-3mozi{
   font-size: 25px;
   position: absolute;
-  left: calc(50% - 82px);
+  left: calc(50% - 75px);
   top: -2px;
 }
 .location-icon-4mozi{
   font-size: 25px;
   position: absolute;
-  left: calc(50% - 90px);
+  left: calc(50% - 75px);
   top: -2px;
 }
 .icon-maney{
@@ -749,23 +749,33 @@ nav .brand-logo{
   background-color: transparent;
 }
 @media only screen and (max-width: 600px) {
-  #breadcrumb .col > a{
+  .breadcrumbList li a{
     font-size: 12px;
   }
 }
 #breadcrumb .col{
   margin-top: 0px;
 }
-.breadcrumb{
-  color: gray;
+.breadcrumbList{
+  display: flex;
+  padding: 0px;
 }
-.breadcrumb:last-child{
-  color: rgba(0,0,0,0.87);
+.breadcrumbList li a{
+  color: gray;
+  margin: 0px 10px;
+}
+.breadcrumb{
+  display: inline-flex;
 }
 .breadcrumb:before{
-  color: rgba(0,0,0,0.87);
+  color: gray;
 }
-
+@media only screen and (max-width: 600px) {
+  .breadcrumb:before{
+    font-size: 12px;
+    margin: 0 5px 0 4px;
+  }
+}
 /* create */
 .input-file-gr{
   display: flex;

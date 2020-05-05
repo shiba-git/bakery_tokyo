@@ -10,7 +10,7 @@
 	              <div class="col s12 m6 l4">
 	                <section class="choosePanFromImage-item">
 	                  <figure class="valign-wrapper">
-	                    <img src="/storage/{{ $pan->image }}" alt="{!! nl2br(e($pan->panname)) !!}">
+	                    <img src="https://bakery-tokyo.s3-ap-northeast-1.amazonaws.com/storage/{{ $pan->image }}" alt="{!! nl2br(e($pan->panname)) !!}">
 	                  </figure>
 	                  <h2>{!! nl2br(e($pan->panname)) !!}</h2>
 	                  <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 {!! nl2br(e($pan->closeststation)) !!}</p>
@@ -39,7 +39,7 @@
                 <div class="col s12 m6 l4">
                   <section class="choosePanFromImage-item">
                     <figure class="valign-wrapper">
-                      <img src="/storage/{{ $pan->image }}" alt="{!! nl2br(e($pan->panname)) !!}">
+                      <img src="https://bakery-tokyo.s3-ap-northeast-1.amazonaws.com/storage/{{ $pan->image }}" alt="{!! nl2br(e($pan->panname)) !!}">
                     </figure>
                     <h2>{!! nl2br(e($pan->panname)) !!}</h2>
                     <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 {!! nl2br(e($pan->closeStaion)) !!}</p>

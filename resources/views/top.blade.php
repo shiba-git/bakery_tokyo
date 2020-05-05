@@ -30,7 +30,7 @@
                   </a>
                 </div>
                 <div class="col s4 m4 l4">
-                  <a href="{{ url('/search/location/?page=1&lat=35.672776&lng=139.768903') }}" id="location-search"class="waves-effect waves-light btn-large btn-field-position">
+                  <a href="" id="locationInformation"class="waves-effect waves-light btn-large btn-field-position">
                     <i class="material-icons location-icon">location_on</i>近く<br class="visible-sp">のパン屋
                   </a>
                 </div>
@@ -78,7 +78,7 @@
             <div class="col s12 m12 l4">
               <section class="recommend-item">
                 <figure class="valign-wrapper">
-                  <img src="{{ asset('images/recommend1.png') }}" alt="パンオクレーム">
+                  <img src="{{ asset('images/recommend1.jpg') }}" alt="パンオクレーム">
                 </figure>
                 <h2>パンオクレーム</h2>
                 <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 渋谷駅</p>
@@ -93,7 +93,7 @@
             <div class="col s12 m12 l4">
               <section class="recommend-item">
                 <figure>
-                  <img src="{{ asset('images/recommend2.png') }}" alt="ブリオッシュ">
+                  <img src="{{ asset('images/recommend2.jpg') }}" alt="ブリオッシュ">
                 </figure>
                 <h2>ブリオッシュ</h2>
                 <p class="position"><i class="material-icons location-icon-4mozi">location_on</i>最寄駅 六本木駅</p>
@@ -108,7 +108,7 @@
             <div class="col s12 m12 l4">
               <section class="recommend-item">
                 <figure>
-                  <img src="{{ asset('images/recommend3.png') }}" alt="渋谷あんぱん">
+                  <img src="{{ asset('images/recommend3.jpg') }}" alt="渋谷あんぱん">
                 </figure>
                 <h2>渋谷あんぱん</h2>
                 <p class="position"><i class="material-icons location-icon-4mozi">location_on</i>最寄駅 渋谷駅</p>
@@ -128,7 +128,7 @@
               <div class="col s12 m6 l4">
                 <section class="choosePanFromImage-item">
                   <figure class="valign-wrapper">
-                    <img src="/storage/{{ $pan->image }}" alt="{!! nl2br(e($pan->panname)) !!}">
+                    <img src="https://bakery-tokyo.s3-ap-northeast-1.amazonaws.com/storage/{{ $pan->image }}" alt="{!! nl2br(e($pan->panname)) !!}">
                   </figure>
                   <h2>{!! nl2br(e($pan->panname)) !!}</h2>
                   <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 {!! nl2br(e($pan->closeststation)) !!}</p>
@@ -197,4 +197,5 @@
                 </a>
               </div>
           </div>
+          
 @endsection

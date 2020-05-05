@@ -17,8 +17,8 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        $pans = Pan::all()->random(6);
+    {   // ->random(6);
+        $pans = Pan::all()->where('permit', '1')->random(6);
         $stores = Store::orderBy('created_at', 'desc')->get();
         $tags = Tag::orderBy('created_at', 'desc')->get();
         $genres = Genre::all();

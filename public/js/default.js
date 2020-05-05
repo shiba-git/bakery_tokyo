@@ -30,18 +30,16 @@ document.addEventListener('DOMContentLoaded', function() {
   // // location click Event
   location.addEventListener("click", function(){
   
-    if (!navigator.geolocation) {
-      // Geolocation APIに対応していない
-      alert("この端末では位置情報が取得できません");
-    }
+    if(navigator.geolocation){
           // 現在地を取得
       navigator.geolocation.getCurrentPosition(
         function(position){
           var lat = position.coords.latitude;
+          console.log(lat);
           var lng = position.coords.longitude;
           var location = {lat: parseFloat(lat), lng: parseFloat(lng)};
-          var uri =  "/search/?latlng=" + lat + "-" + lng;
-          location.href = uri;
+          var uri =  "/search/location/?page=1&lat=" + lat + "&lng=" + lng;
+          window.location.href = uri;
         },
         // 取得失敗した場合
         function(error) {
@@ -61,5 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         }
       ); // navigator.geolocation.getCurrentPosition
+    }else{
+      // Geolocation APIに対応していない
+      alert("この端末では位置情報が取得できません");
+    };
   }); //click Event
 });

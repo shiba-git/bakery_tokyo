@@ -32,7 +32,7 @@
             <div class="col s12 m6 l4">
                 <div class="card">
                   <div class="card-image">
-                    <img src="/storage/{{ $pan->image }}" alt="{!! nl2br(e($pan->panname)) !!}">
+                    <img src="https://bakery-tokyo.s3-ap-northeast-1.amazonaws.com/storage/{{ $pan->image }}" alt="{!! nl2br(e($pan->panname)) !!}">
                   </div>
                   <div class="card-content">
                     <p>{!! nl2br(e($pan->panname)) !!}</p>

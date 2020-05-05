@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel=”icon” href="{{ asset('images/favicon.ico') }}">
+    <meta http-equiv="X-UA-Compatible" content=IE=edge">
+    <link rel="icon" href="{{ asset('images/favicon.ico') }}">
     <link rel="profile"href="">
     <link rel="pingback" href="">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -32,6 +33,7 @@
         </nav>
         <ul class="sidenav" id="mobile-demo">
           <li><a href="{{ url('key') }}">キャンペーン</a></li>
+          <li><a class="sidenav-close" href="#close">閉じる</a></li>
         </ul>
     </header>
     <main>

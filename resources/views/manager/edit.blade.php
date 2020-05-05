@@ -9,7 +9,7 @@
               @csrf
               
                   <div class="col s12">
-                    <img src="/storage/{{$pan->image}}" alt="" width="100%" style="margin: 10px auto; max-width: 300px;">
+                    <img src="https://bakery-tokyo.s3-ap-northeast-1.amazonaws.com/storage/{{$pan->image}}" alt="" width="100%" style="margin: 10px auto; max-width: 300px;">
                   </div>
                   <div class="col s12">
                     <p class="label">パン画像<span style="color:red">※</span></p>
