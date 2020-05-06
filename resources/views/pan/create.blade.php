@@ -1,5 +1,7 @@
 @extends('layout.template')
 @section('title', '新規投稿')
+@section('description', 'パン画像の提供よろしくお願いいたします。')
+@section('keywords', 'パン,ベーカリー,東京,新規投稿,東京グルメ,おススメのパン屋,近くのパン屋,グルメ,Instagram,インスタグラム')
 @section('contents')
       <div class="main-wrap">
         <div class="container">

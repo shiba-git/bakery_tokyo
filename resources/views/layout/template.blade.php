@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr">
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PT5P4SF');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content=IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="@yield('keywords')">
     <link rel="icon" href="{{ asset('images/favicon.ico') }}">
-    <link rel="profile"href="">
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="profile" href="">
     <link rel="pingback" href="">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -15,6 +26,10 @@
     <title>@yield('title') | BarkeyTokyo</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PT5P4SF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="navbar-fixed">
         <nav>
           <div class="nav-wrapper">

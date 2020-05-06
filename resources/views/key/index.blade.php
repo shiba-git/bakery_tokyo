@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PT5P4SF');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="インスタグラム画像提供よろしくお願いいたします。">
+    <meta name="keywords" content="パン,ベーカリー,東京,東京グルメ,画像,Instagram,インスタグラム">
+    <link rel="icon" href="{{ asset('images/favicon.ico') }}">
     <link rel="profile"href="">
     <link rel="pingback" href="">
     <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
@@ -12,9 +22,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/key.css') }}">
-    <title>画像提供 | BarkeyTokyo</title>
+    <title>キャンペーン | BarkeyTokyo</title>
   </head>
   <body id="key">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PT5P4SF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <h2><img src="{{ asset('images/key-logo.png') }}" alt="BarkeyTokyo"></h2>
     <p class="key-main-text">画像提供よろしくお願いいたします。</p>
     <div class="key-wrap row">

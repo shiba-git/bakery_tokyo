@@ -1,5 +1,7 @@
 @extends('layout.template')
 @section('title', 'パン一覧')
+@section('description', 'パン画像一覧ページ')
+@section('keywords', 'パン,ベーカリー,東京,新規投稿,東京グルメ,おススメのパン屋,近くのパン屋,グルメ,Instagram,インスタグラム')
 @section('contents')
       <div class="main-wrap">
         <div class="container">
@@ -14,7 +16,7 @@
 	                  </figure>
 	                  <h2>{!! nl2br(e($pan->panname)) !!}</h2>
 	                  <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 {!! nl2br(e($pan->closeststation)) !!}</p>
-	                  <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="">あんぱん</a></p>
+	                  <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="/genre/{!! nl2br(e($pan->genre->genreName)) !!}">{!! nl2br(e($pan->genre->genreName)) !!}</a></p>
                     <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="https://www.instagram.com/{!! nl2br(e($pan->instagramid)) !!}" target="_blank">{!! nl2br(e($pan->instagramid)) !!}</a></p>
 	                  <div class="store-btn">
 	                    <a class="waves-effect waves-light btn-large">

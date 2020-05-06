@@ -1,5 +1,7 @@
 @extends('layout.template')
 @section('title', 'TOP')
+@section('description', 'BakeryTokyoとは、都内であなた好みのパンを探すサイトです。')
+@section('keywords', 'パン,ベーカリー,東京,東京グルメ,おススメのパン屋,近くのパン屋,グルメ,Instagram,インスタグラム')
 @section('contents')
       <div id="top-bg" class="valign-wrapper">
         <div class="container row" id="top">
@@ -195,6 +197,15 @@
                 <a href="https://twitter.com/bakery_tokyo" target="_blank" class="btn2 twi_btn2">
                   <i class="fab fa-twitter"></i><span>bakery_tokyo</span>
                 </a>
+              </div>
+          </div>
+          <div class="tags">
+            <h2><p class="position pos-m"><i class="fas fa-comment i-tag-genre fa-lg"></i>活用機能（ぐるなび）</p></h2>
+            <div class="row">
+              <div class="col s12 top-sns">
+                <a href="https://api.gnavi.co.jp/api/scope/" target="_blank">
+                  <img src="https://api.gnavi.co.jp/api/img/credit/api_265_65.gif" width="265" height="65" border="0" alt="グルメ情報検索サイト　ぐるなび">
+                  </a>
               </div>
           </div>
           

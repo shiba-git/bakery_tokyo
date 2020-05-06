@@ -1,5 +1,7 @@
 @extends('layout.template')
 @section('title', $genreName )
+@section('description', $genreName . 'のページです')
+@section('keywords', 'パン,ベーカリー,東京,新規投稿,東京グルメ,グルメ,Instagram,インスタグラム,ジャンル,' . $genreName)
 @section('contents')
       <div class="main-wrap">
         <div class="container">

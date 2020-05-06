@@ -5,6 +5,8 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="refresh" content="3;URL={{url('/')}}">
+    <meta name="description" content="投稿完了致しました。">
+    <meta name="keywords" content="パン,ベーカリー,東京,東京グルメ,インスタグラム">
     <link rel="profile"href="">
     <link rel="pingback" href="">
     <link rel="stylesheet" href="../../css/normalize.css">
