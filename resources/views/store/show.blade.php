@@ -25,7 +25,7 @@
                 <div class="col s12 m6 l4">
                   <section class="choosePanFromImage-item">
                     <figure class="valign-wrapper">
-                      <img src="/storage/{!! nl2br(e($pan->image)) !!}" alt="{!! nl2br(e($pan->name)) !!}">
+                      <img src="https://bakery-tokyo.s3-ap-northeast-1.amazonaws.com/storage/{!! nl2br(e($pan->image)) !!}" alt="{!! nl2br(e($pan->name)) !!}">
                     </figure>
                     <h2>{!! nl2br(e($pan->panname)) !!}</h2>
                     <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="/genre/{!! nl2br(e($pan->genre->genreName)) !!}">{!! nl2br(e($pan->genre->genreName)) !!}</a></p>
@@ -53,10 +53,11 @@
                 <div class="col s12 m6 l4">
                   <section class="choosePanFromImage-item">
                     <figure class="valign-wrapper">
-                      <img src="/storage/{!! nl2br(e($pan->image)) !!}" alt="{!! nl2br(e($pan->name)) !!}">
+                      <img src="https://bakery-tokyo.s3-ap-northeast-1.amazonaws.com/storage/{!! nl2br(e($pan->image)) !!}" alt="{!! nl2br(e($pan->name)) !!}">
                     </figure>
                     <h2>{!! nl2br(e($pan->panname)) !!}</h2>
-                    
+                    <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="/genre/{!! nl2br(e($pan->genre->genreName)) !!}">{!! nl2br(e($pan->genre->genreName)) !!}</a></p>
+                    <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="https://www.instagram.com/{!! nl2br(e($pan->instagramid)) !!}" target="_blank">{!! nl2br(e($pan->instagramid)) !!}</a></p>
                   </section>
                 </div> <!-- col -->
               @endforeach

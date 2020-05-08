@@ -19,7 +19,7 @@
 	                  <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="/genre/{!! nl2br(e($pan->genre->genreName)) !!}">{!! nl2br(e($pan->genre->genreName)) !!}</a></p>
                     <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="https://www.instagram.com/{!! nl2br(e($pan->instagramid)) !!}" target="_blank">{!! nl2br(e($pan->instagramid)) !!}</a></p>
 	                  <div class="store-btn">
-	                    <a class="waves-effect waves-light btn-large">
+	                    <a href="{!! nl2br(e($pan->storepath)) !!}" target="_blank" class="waves-effect waves-light btn-large">
 	                        <i class="material-icons store-icon">store</i>お店の詳細へ
 	                    </a>
 	                  </div>
@@ -49,7 +49,7 @@
                     <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="https://www.instagram.com/{!! nl2br(e($pan->instagramid)) !!}" target="_blank">{!! nl2br(e($pan->instagramid)) !!}</a></p>
 
                     <div class="store-btn">
-                      <a class="waves-effect waves-light btn-large">
+                      <a href="{!! nl2br(e($pan->storepath)) !!}" target="_blank" class="waves-effect waves-light btn-large">
                           <i class="material-icons store-icon">store</i>お店の詳細へ
                       </a>
                     </div>

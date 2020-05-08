@@ -86,7 +86,7 @@
                 <p class="position"><i class="material-icons location-icon-3mozi">location_on</i>最寄駅 渋谷駅</p>
                 <p class="position"><i class="icon-maney"></i>値段 260円</p>
                 <div class="store-btn">
-                  <a class="waves-effect waves-light btn-large">
+                  <a href="https://r.gnavi.co.jp/ph46gwb10000/" target="_blank" class="waves-effect waves-light btn-large">
                       <i class="material-icons store-icon">store</i>お店の詳細へ
                   </a>
                 </div>
@@ -101,7 +101,7 @@
                 <p class="position"><i class="material-icons location-icon-4mozi">location_on</i>最寄駅 六本木駅</p>
                 <p class="position"><i class="icon-maney"></i>値段 400円</p>
                 <div class="store-btn">
-                  <a class="waves-effect waves-light btn-large">
+                  <a href="https://r.gnavi.co.jp/a1hkdnf50000/" target="_blank" class="waves-effect waves-light btn-large">
                       <i class="material-icons store-icon">store</i>お店の詳細へ
                   </a>
                 </div>
@@ -116,7 +116,7 @@
                 <p class="position"><i class="material-icons location-icon-4mozi">location_on</i>最寄駅 渋谷駅</p>
                 <p class="position"><i class="icon-maney"></i>値段 300円</p>
                 <div class="store-btn">
-                  <a class="waves-effect waves-light btn-large">
+                  <a href="https://tabelog.com/tokyo/A1303/A130301/13240814/" target="_blank" class="waves-effect waves-light btn-large">
                       <i class="material-icons store-icon">store</i>お店の詳細へ
                   </a>
                 </div>
@@ -125,7 +125,7 @@
           </div>
           <div class="choosePanFromImage row" id="choosePanFromImage">
             <h2><i class="material-icons">image</i>画像からパンを選ぶ</h2>
-            <p class="description"><a href="">提供されたパン画像</a> や <a href="https://www.instagram.com/bakery_tokyo/" target="_blank">BakeryTokyoのインスタグラム</a>をランダムで掲載してます。
+            <p class="description"><a href="{{ url('pan/create/') }}">提供されたパン画像</a> や <a href="https://www.instagram.com/bakery_tokyo/" target="_blank">BakeryTokyoのインスタグラム</a>をランダムで掲載してます。
             @foreach ($pans as $pan)
               <div class="col s12 m6 l4">
                 <section class="choosePanFromImage-item">
@@ -137,7 +137,7 @@
                   <p class="position"><i class="material-icons location-icon-3mozi">bookmark</i><a href="/genre/{!! nl2br(e($pan->genre->genreName)) !!}">{!! nl2br(e($pan->genre->genreName)) !!}</a></p>
                   <p class="position"><i class="fab fa-instagram i-insta fa-lg"></i><a href="https://www.instagram.com/{!! nl2br(e($pan->instagramid)) !!}" target="_blank">{!! nl2br(e($pan->instagramid)) !!}</a></p>
                   <div class="store-btn">
-                    <a class="waves-effect waves-light btn-large">
+                    <a href="{!! nl2br(e($pan->storepath)) !!}" target="_blank" class="waves-effect waves-light btn-large">
                         <i class="material-icons store-icon">store</i>お店の詳細へ
                     </a>
                   </div>

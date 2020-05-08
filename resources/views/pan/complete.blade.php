@@ -28,19 +28,13 @@
                 </a>
               <h1>
               <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">ログイン</a></li>
-                <li><a href="badges.html">ログアウト</a></li>
-                <li><a href="collapsible.html">新規登録</a></li>
-                <li><a href="mobile.html">設定</a></li>
+                <li><a href="{{ url('key') }}">キャンペーン</a></li>
               </ul>
             </div>
           </div>
         </nav>
         <ul class="sidenav" id="mobile-demo">
-          <li><a href="sass.html">ログイン</a></li>
-          <li><a href="badges.html">ログアウト</a></li>
-          <li><a href="collapsible.html">新規登録</a></li>
-          <li><a href="mobile.html">設定</a></li>
+          <li><a href="{{ url('key') }}">キャンペーン</a></li>
           <li><a class="sidenav-close" href="#close">閉じる</a></li>
         </ul>
     </header>

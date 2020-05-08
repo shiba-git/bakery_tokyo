@@ -33,7 +33,7 @@
     <p class="key-main-text">画像提供よろしくお願いいたします。</p>
     <div class="key-wrap row">
       <div class="col s12 m12 l5">
-        <p class="goal-text">目標枚数100枚を目指す :<p>
+        <p class="goal-text">目標枚数100枚を目指す<p>
       </div>
       <div class="col s12 m12 l7">
         <div class="skillbar clearfix " data-percent="{{ $count }}%">
@@ -66,7 +66,7 @@
           <p>画像は、以下の条件を満たしているものをお願いします。</p>
           <ul>
             <li>・人物が写っていない画像</li>
-            <li>・パンが（なるべく単体で）大きく写っている画像大きく</li>
+            <li>・パンが（なるべく単体で）大きく写っている画像</li>
           </ul>
           <p>明るさや、表面・断面を問いません。</p>
         </div>
