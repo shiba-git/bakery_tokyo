@@ -32,7 +32,7 @@
                   </a>
                 </div>
                 <div class="col s4 m4 l4">
-                  <a href="" id="locationInformation"class="waves-effect waves-light btn-large btn-field-position">
+                  <a href="" id="locationBtn"class="waves-effect waves-light btn-large btn-field-position">
                     <i class="material-icons location-icon">location_on</i>近く<br class="visible-sp">のパン屋
                   </a>
                 </div>

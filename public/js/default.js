@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // // location locationInformation
-  var location = document.getElementById('location-search');
+  var location = document.getElementById('locationBtn');
   // // location click Event
   location.addEventListener("click", function(){
   
