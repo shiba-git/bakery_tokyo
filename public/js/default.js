@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   //edit 
   $('select#permit').formSelect();
-  $('select#storeid').formSelect();
-  $('select#genreid').formSelect();
+   $('select#storeid').formSelect();
+   $('select#genreid').formSelect();
   // delete
   $(".deletebtn").on("submit", function(){
     return confirm("本当に削除してよろしいでしょうか？");

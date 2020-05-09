@@ -75,9 +75,16 @@
                       ストアID
                     </label>
                     <select id="storeid" name="store_id">
-                      @foreach ($stores as $store)
-                        <option value="{!! nl2br(e($store->id)) !!}">{!! nl2br(e($store->storeName)) !!}</option>
-                      @endforeach
+                      @if ($pan->store_id == null)
+                        <option value="" selected>NULL</option>
+                        @foreach ($stores as $store)
+                          <option value="{!! nl2br(e($store->id)) !!}">{!! nl2br(e($store->storeName)) !!}</option>
+                        @endforeach 
+                      @else
+                        @foreach ($stores as $store)
+                          <option value="{!! nl2br(e($store->id)) !!}" {{ $store->id == $pan->store_id ? 'selected' : '' }}>{!! nl2br(e($store->storeName)) !!}</option>
+                        @endforeach
+                      @endif
                     </select>
                   </div>
                   <div class="col s6">
@@ -85,9 +92,16 @@
                       ジャンルID
                     </label>
                     <select id="genreid" name="genre_id">
-                      @foreach ($genres as $genre)
-                        <option value="{!! nl2br(e($genre->id)) !!}">{!! nl2br(e($genre->genreName)) !!}</option>
-                      @endforeach
+                      @if ($pan->genre_id == null)
+                        <option value="" selected>NULL</option>
+                        @foreach ($genres as $genre)
+                          <option value="{!! nl2br(e($genre->id)) !!}">{!! nl2br(e($genre->genreName)) !!}</option>
+                        @endforeach 
+                      @else
+                        @foreach ($genres as $genre)
+                          <option value="{!! nl2br(e($genre->id)) !!}" {{ $genre->id == $pan->genre_id ? 'selected' : '' }}>{!! nl2br(e($genre->genreName)) !!}</option>
+                        @endforeach
+                      @endif
                     </select>
                   </div>
               <div class="col s6">
