@@ -555,6 +555,13 @@ nav .brand-logo{
 .choosePanFromImage-item > h2{
   font-size: 30px;
   text-align: center;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .recommend-item > h2,
+  .choosePanFromImage-item > h2{
+    font-size: 25px;
+  }
 }
 .searchStoreBox-item  h2{
   font-size: 22px;
@@ -571,7 +578,7 @@ nav .brand-logo{
 }
 #recommend > .col > .recommend-item > p:first-of-type,
 #choosePanFromImage > .col > .choosePanFromImage-item > p:first-of-type{
-  margin-top: 25px;
+  margin-top: 15px;
 }
 @media only screen and (max-width: 600px) {
   .recommend-item > p,
