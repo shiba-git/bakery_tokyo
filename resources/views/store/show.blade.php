@@ -11,7 +11,7 @@
             <div id="store-description">
               @foreach ($posts["rest"] as $shop)
               <p class="name">{{ $shop["address"] }}</p>
-              <p>東京メトロ丸ノ内線 銀座駅 C8口 徒歩2分</p>
+              <p>{{ $shop["access"]['line'] }} {{ $shop["access"]['station'] }} {{ $shop["access"]['station_exit'] }} {{ $shop["access"]['walk'] }}</p>
               <p class="tel"><a rel="tel" href="tel:{{ $shop['tel'] }}">{{ $shop['tel'] }}</a></p>
               <div class="store-btn">
                 <a href="{{ $shop['url'] }}" class="waves-effect waves-light btn-large" target="_blank">

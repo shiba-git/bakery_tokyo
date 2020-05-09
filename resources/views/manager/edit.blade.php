@@ -81,6 +81,7 @@
                           <option value="{!! nl2br(e($store->id)) !!}">{!! nl2br(e($store->storeName)) !!}</option>
                         @endforeach 
                       @else
+                        <option value="" selected>NULL</option>
                         @foreach ($stores as $store)
                           <option value="{!! nl2br(e($store->id)) !!}" {{ $store->id == $pan->store_id ? 'selected' : '' }}>{!! nl2br(e($store->storeName)) !!}</option>
                         @endforeach
@@ -98,6 +99,7 @@
                           <option value="{!! nl2br(e($genre->id)) !!}">{!! nl2br(e($genre->genreName)) !!}</option>
                         @endforeach 
                       @else
+                        <option value="" selected>NULL</option>
                         @foreach ($genres as $genre)
                           <option value="{!! nl2br(e($genre->id)) !!}" {{ $genre->id == $pan->genre_id ? 'selected' : '' }}>{!! nl2br(e($genre->genreName)) !!}</option>
                         @endforeach
