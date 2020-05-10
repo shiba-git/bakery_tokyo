@@ -31,9 +31,10 @@
                       <i class="material-icons image-icon">image</i>画像<br class="visible-sp">からパン屋
                   </a>
                 </div>
-                <div class="col s4 m4 l4">
-                  <a href="" id="locationBtn"class="waves-effect waves-light btn-large btn-field-position">
-                    <i class="material-icons location-icon">location_on</i>近く<br class="visible-sp">のパン屋
+                <!-- id="locationBtn" -->
+                <div class="col s4 m4 l4"> 
+                  <a class="waves-effect waves-light btn-large btn-field-position">
+                    <i class="material-icons location-icon">location_on</i>近くのパン屋<br class="visible-sp">(準備中)
                   </a>
                 </div>
           </div>
