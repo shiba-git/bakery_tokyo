@@ -25,6 +25,11 @@ Breadcrumbs::for('create', function ($trail) {
     $trail->parent('pan');
     $trail->push('新規作成', route('pan.create'));
 });
+Breadcrumbs::for('type', function ($trail) {
+    $trail->parent('pan');
+    $trail->push('投稿タイプ', route('pan.type'));
+});
+
 
 // Home > Blog > [Category]
 Breadcrumbs::for('tag', function ($trail, $tagName) {

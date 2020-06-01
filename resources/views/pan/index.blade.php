@@ -30,7 +30,7 @@
           </div>
           <div class="links row" id="links">
             <div class="col s12 m12 l12">
-                <a id="postPans"class="waves-effect waves-light" href="{{ url('pan/create/') }}">
+                <a id="postPans"class="waves-effect waves-light" href="{{ url('pan/type/') }}">
                   パン画像を投稿 ( 提供 ) する<i class="material-icons chevron_right-icon">chevron_right</i>
                 </a>
             </div>

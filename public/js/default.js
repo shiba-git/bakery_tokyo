@@ -24,6 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
   $(".deletebtn").on("submit", function(){
     return confirm("本当に削除してよろしいでしょうか？");
   });
+
+  // type
+  $("#toggle-line").on("click", function() {
+    $("#type-line").slideToggle();
+  });
+  $("#toggle-insta").on("click", function() {
+    $("#type-insta").slideToggle();
+  });
   
   // // location locationInformation
   var location = document.getElementById('locationBtn');

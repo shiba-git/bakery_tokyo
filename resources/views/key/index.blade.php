@@ -112,13 +112,13 @@
     <script src="{{ asset('js/jquery.matchHeight-min.js') }}"></script>
     <script src="{{ asset('js/wow.js') }}"></script>
     <script src="{{ asset('js/default.js') }}"></script>
-    <script>
+<!--     <script>
       new WOW().init();
       $('.skillbar').each(function(){
         $(this).find('.skillbar-bar').animate({
           width: $(this).attr('data-percent')
         },2000);
       });
-    </script>
+    </script> -->
   </body>
 </html>
