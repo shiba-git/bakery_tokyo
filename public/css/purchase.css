@@ -38,17 +38,27 @@
   background-color: #fff;
   position: relative;
 }
+@media only screen and (max-width: 320px) {
+  .stepWrap{
+    padding: 0 5px;
+  }
+}
 .stepWrap::before{
   position: absolute;
-  width: 175px;
-  height: 51px;
+  width: 87px;
+  height: 25px;
   top: 10px;
   left: 0px;
   content: '';
 }
 .stepWrap p{
   font-size: 13px;
+}
+@media only screen and (max-width: 320px) {
+  .stepWrap p{
+    font-size: 12px;
   }
+}
 .step01::before{
   background: url(/images/step01.png);
   background-size: 87px 25px;
@@ -70,7 +80,7 @@
   background-repeat: no-repeat;
 }
 .stepicon{
-  margin-top: 45px;
+  margin-top: 50px;
   text-align: center;
 }
 #purchase .col{
@@ -81,4 +91,33 @@
   font-size: 15px;
   text-align: center;
   font-weight: bold;
+}
+.cvWrap{
+  margin: 30px 0;
+  padding: 15px 0;
+  background-color: rgb(255, 180, 62);
+  text-align: center;
+}
+.cvText{
+  margin-bottom: 0px;
+}
+.cvSmall{
+  margin-top: 1px;
+  font-size: 10px;
+}
+.cvBtn{
+  margin-top: 10px;
+  width: 80%;
+  height: 50px;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 2px;
+  box-shadow: 0 2px 10px 0 rgba(174,191,212,.26);
+}
+.termsOfUse{
+  width: 85%;
+  margin: 0 auto;
+}
+.termsOfUse > ol > li{
+  font-size: 12px;
 }

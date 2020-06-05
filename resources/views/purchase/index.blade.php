@@ -51,53 +51,87 @@
         </ul>
     </header>
     <main id="purchase">
-      <div class="mainImg">
-        <img src="{{ asset('images/purchase_sp.jpg') }}" alt="" width="100%" height="auto">
-      </div>
-      <div class="mainText">
-        <p>新型コロナウイルスの影響により、飲食業界は大きな打撃を受けている。</p>
-        <p>BakeryTokyoから、営業再開後勢いを取り返すための特別なキャンペーンをご用意いたしました。</p>
-      </div>
-      <div class="row step">
-        <div class="titlewrap"><h2>各ステップに従い、応募をよろしくお願いします。</h2></div>
-        <div class="col s6 l3">
-          <div class="stepWrap step01">
-            <div class="stepicon">
-              <img src="{{ asset('images/image.png') }}" alt="" width="30%" height="auto">
-            </div>
-            <h3>画像を用意</h3>
-            <p>「パン画像」「パンの名前」「パン屋の名前」を用意してください。</p>
+        <div class="mainImg">
+          <img src="{{ asset('images/purchase_sp.jpg') }}" alt="" width="100%" height="auto">
+        </div>
+        <div class="mainText">
+          <p>新型コロナウイルスの影響により、飲食業界は大きな打撃を受けている。</p>
+          <p>BakeryTokyoから、営業再開後勢いを取り返すための特別なキャンペーンをご用意いたしました。</p>
+        </div>
+        <div class="cv">
+          <div class="cvWrap">
+            <p class="cvText">スマホに眠っているパン画像を買い取ります。</p>
+            <p class="cvSmall">※一部条件があります。以下のステップをご確認下さい。</p>
+            <a href="/pan/type/">
+              <button class="cvBtn">投稿フォームへ移動</button>
+            </a>
           </div>
         </div>
-        <div class="col s6 l3">
-          <div class="stepWrap step02">
-            <div class="stepicon">
-              <img src="{{ asset('images/site.png') }}" alt="" width="30%" height="auto">
+        <div class="row step">
+          <div class="titlewrap"><h2>各ステップに従い、応募をよろしくお願いします。</h2></div>
+          <div class="col s6 l3">
+            <div class="stepWrap step01">
+              <div class="stepicon">
+                <img src="{{ asset('images/image.png') }}" alt="" width="30%" height="auto">
+              </div>
+              <h3>画像を用意</h3>
+              <p>「パン画像」「パンの名前」「パン屋の名前」を用意してください。</p>
             </div>
-            <h3>投稿タイプを選択</h3>
-            <p>「公式ライン」「インスタグラム」「当サイト」から投稿可能です。</p>
+          </div>
+          <div class="col s6 l3">
+            <div class="stepWrap step02">
+              <div class="stepicon">
+                <img src="{{ asset('images/site.png') }}" alt="" width="30%" height="auto">
+              </div>
+              <h3>投稿タイプを選択</h3>
+              <p><a href="/pan/type/" target="_blank">投稿フォーム</a>へ移動する。「公式ライン」「インスタグラム」「当サイト」から投稿可能です。</p>
+            </div>
+          </div>
+          <div class="col s6 l3">
+            <div class="stepWrap step03">
+              <div class="stepicon">
+                <img src="{{ asset('images/sumaho.png') }}" alt="" width="30%" height="auto">
+              </div>
+              <h3>情報を入力する</h3>
+              <p>Step2で選択したメディアに従って情報を入力してください。</p>
+            </div>
+          </div>
+          <div class="col s6 l3">
+            <div class="stepWrap step04">
+              <div class="stepicon">
+                <img src="{{ asset('images/maney.png') }}" alt="" width="30%" height="auto">
+              </div>
+              <h3>報酬(PayPal)</h3>
+              <p>BakeryTokyoからPayPalでお支払い致します。※お支払い方法は、今後増やしていく予定です。</p>
+            </div>
           </div>
         </div>
-        <div class="col s6 l3">
-          <div class="stepWrap step03">
-            <div class="stepicon">
-              <img src="{{ asset('images/sumaho.png') }}" alt="" width="30%" height="auto">
-            </div>
-            <h3>情報を入力する</h3>
-            <p>Step2で選択したメディアに従って情報を入力してください。</p>
+        <div class="cv">
+          <div class="cvWrap">
+            <p class="cvText">スマホに眠っているパン画像を買い取ります。</p>
+            <p class="cvSmall">※一部条件があります。以下のステップをご確認下さい。</p>
+            <a href="/pan/type/">
+              <button class="cvBtn">投稿フォームへ移動</button>
+            </a>
           </div>
         </div>
-        <div class="col s6 l3">
-          <div class="stepWrap step04">
-            <div class="stepicon">
-              <img src="{{ asset('images/maney.png') }}" alt="" width="30%" height="auto">
-            </div>
-            <h3>お支払い(PayPal)</h3>
-            <p>BakeryTokyoからPayPalでお支払い致します。※お支払い方法は、今後増やしていく予定です。</p>
-          </div>
+        <div class="termsOfUse">
+          <p> [ 利用規約 ] </p>
+          <ol>
+            <li>キャンペーン期間: 2020年6月30日まで。</li>
+            <li>キャンペーンは、予告なく変更または終了になる場合があります。</li>
+            <li>画像提供は、本人のみでお願いします。</li>
+            <li>ユーザーは、投稿情報(画像を含む)について、無償で利用（複製、複写、改変）する権利を許諾するものとします。この利用の許諾は永続的かつ取消不能のものとします。</li>
+            <li>投稿後変更または削除を行いたい場合は、BakeryTokyoのソーシャルメディアに直接お問い合わせください。</li>
+            <li>bakerytokyo.comは最終的に全ての解釈権を有します。</li>
+          </ol>
         </div>
-    </div>
     </main>
+    <footer>
+      <div class="footer-inner">
+        <p class="copyright"><small>@Copyright2020 BakeryTokyo.All Rights Reserved.</small></p>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
