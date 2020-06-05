@@ -106,7 +106,7 @@
             </div>
           </div>
         </div>
-        <div class="cv">
+        <!-- <div class="cv">
           <div class="cvWrap">
             <p class="cvText">スマホに眠っているパン画像を買い取ります。</p>
             <p class="cvSmall">※一部条件があります。以下のステップをご確認下さい。</p>
@@ -114,7 +114,7 @@
               <button class="cvBtn">投稿フォームへ移動</button>
             </a>
           </div>
-        </div>
+        </div> -->
         <div class="termsOfUse">
           <p> [ 利用規約 ] </p>
           <ol>
