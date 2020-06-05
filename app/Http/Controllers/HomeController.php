@@ -29,6 +29,10 @@ class HomeController extends Controller
         $count = Pan::all()->where('permit', '1')->count();
         return view('key.index', ['count' => $count]);
     }
+    public function purchase()
+    {
+        return view('purchase.index');
+    }
     public function type()
     {
         return view('pan.type');

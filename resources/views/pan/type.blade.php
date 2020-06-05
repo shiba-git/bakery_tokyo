@@ -41,14 +41,17 @@
                 <div class="row bannerWrap">
                     <div class="col s12 l6">
                       <div class="banner">
+                      		<img src="{{ asset('images/banner_no.jpg') }}" alt="" width="100%">
                       </div>
                     </div>
                     <div class="col s12 l6">
                       <div class="banner">
+                      	<img src="{{ asset('images/banner_no.jpg') }}" alt="" width="100%">
                       </div>
                     </div>
                     <div class="col s12 l6">
                       <div class="banner">
+                      	<img src="{{ asset('images/banner_no.jpg') }}" alt="" width="100%">
                       </div>
                     </div>
                 </div>

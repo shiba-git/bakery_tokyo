@@ -33,8 +33,8 @@
                 </div>
                 <!-- id="locationBtn" -->
                 <div class="col s4 m4 l4"> 
-                  <a class="waves-effect waves-light btn-large btn-field-position">
-                    <i class="material-icons location-icon">location_on</i>近くのパン屋<br class="visible-sp">(準備中)
+                  <a href="/" class="waves-effect waves-light btn-large btn-field-position">
+                    <i class="material-icons location-icon">star</i>画像を<br class="visible-sp">売る(準備中)
                   </a>
                 </div>
           </div>

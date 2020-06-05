@@ -22,8 +22,10 @@ Route::get('/pan/type/', 'HomeController@type')->name('pan.type');
 Route::get('/pan/create/', 'PanController@create')->name('pan.create');
 Route::post('/pan/complete/', 'PanController@complete')->name('pan.complete');
 
-// key 
+// 静的ぺージ 
 Route::get('/key/', 'HomeController@key')->name('key.index');
+Route::get('/purchase/', 'HomeController@purchase')->name('purchase.index');
+
 // store 
 Route::get('/store/{storeName}/', 'StoreController@show')->name('store.show');
 
