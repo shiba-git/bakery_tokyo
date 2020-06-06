@@ -25,6 +25,7 @@ Route::post('/pan/complete/', 'PanController@complete')->name('pan.complete');
 // 静的ぺージ 
 Route::get('/key/', 'HomeController@key')->name('key.index');
 Route::get('/purchase/', 'HomeController@purchase')->name('purchase.index');
+Route::get('/new/', 'HomeController@new')->name('new.index');
 
 // store 
 Route::get('/store/{storeName}/', 'StoreController@show')->name('store.show');

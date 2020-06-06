@@ -927,3 +927,31 @@ input[type="file"]{
   height: auto;
   margin-top: 10px !important;
 }
+#slider{
+  width: 100%;
+  
+}
+#slider > li{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+#slider > li > .sliderWrap > img{
+  width: 100%;
+}
+.sliderWrap{
+  width: 80%;
+  margin: 0 auto;
+}
+.sliderTitle{
+  font-size: 1.125rem;
+  margin-top: 7px;
+  margin-bottom: 0px;
+    font-weight: 400;
+  color: #0f294d;
+}
+.sliderDescription{
+  font-size: 13px;
+  margin-top: 10px;
+}

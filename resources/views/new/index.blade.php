@@ -57,82 +57,50 @@
           <li><a class="sidenav-close" href="#close">閉じる</a></li>
         </ul>
     </header>
-    <main id="purchase">
+    <main id="new">
         <div class="mainImg">
-          <img src="{{ asset('images/purchase_sp.jpg') }}" alt="" width="100%" height="auto">
+          <img src="{{ asset('images/new_sp.jpg') }}" alt="" width="100%" height="auto">
         </div>
         <div class="mainText">
           <p>新型コロナウイルスの影響により、飲食業界は大きな打撃を受けている。</p>
-          <p>BakeryTokyoから、営業再開後勢いを取り返すための特別なキャンペーンをご用意いたしました。</p>
+          <p>営業再開後、新しい商品などを訴求したい企業様はBakeryTokyoがお手伝いします。</p>
         </div>
-        <div class="cvSp">
+        <div class="imagesNew">
+          <img src="{{ asset('images/new_desc.jpg') }}" alt="" width="100%" height="auto">
+        </div>
+        <div class="mainText">
+          <p>トップページの上部に掲載します。<br>素材は、以下の２点のご用意をよろしくお願いいたします。</p>
+        </div>
+        <div class="imagesText">
+          <h2>準備して頂く素材</h2>
+          <ul>
+            <li>商品画像</li>
+            <li>訴求したい文言
+            </li>
+          </ul>
+        </div>
+        <div class="imagesText">
+          <h2>特集の詳細</h2>
+          <ul>
+            <li>値段は無料です。</li>
+            <li>期間は未定です。突然、予告なしに終了する場合があります。</li>
+            <li>企業様ご本人で申し込みお願いいたします。</li>
+            <li>(内容によって)掲載をお断りする場合があります。</li>
+          </ul>
+        </div>
+        <div class="mainText">
+          <p>以下のボタンから、申し込みよろしくお願いいたします。</p>
+        </div>
+        <div class="new">
           <div class="cvWrap">
-            <p class="cvText">スマホに眠っているパン画像を買い取ります。</p>
-            <p class="cvSmall">※一部条件があります。以下のステップをご確認下さい。</p>
-            <a href="/pan/type/">
-              <button class="cvBtn">投稿フォームへ移動</button>
+            <p class="cvText">お問い合わせ</p>
+            <p class="cvSmall">※「特集掲載希望」と一言宜しくお願い致します。</p>
+            <a href="mailto:shiba.webbusiness@gmail.com?subject=%E7%89%B9%E9%9B%86%E6%8E%B2%E8%BC%89%E5%B8%8C%E6%9C%9B" target="_blank">
+              <button class="cvBtn">メールへ移動</button>
             </a>
           </div>
         </div>
-        <div class="row step">
-          <div class="titlewrap"><h2>各ステップに従い、応募をよろしくお願いします。</h2></div>
-          <div class="col s6 l3">
-            <div class="stepWrap step01">
-              <div class="stepicon">
-                <img src="{{ asset('images/image.png') }}" alt="" width="30%" height="auto">
-              </div>
-              <h3>画像を用意</h3>
-              <p>「パン画像」「パンの名前」「パン屋の名前」を用意してください。</p>
-            </div>
-          </div>
-          <div class="col s6 l3">
-            <div class="stepWrap step02">
-              <div class="stepicon">
-                <img src="{{ asset('images/site.png') }}" alt="" width="30%" height="auto">
-              </div>
-              <h3>投稿タイプを選択</h3>
-              <p><a href="/pan/type/" target="_blank">投稿フォーム</a>へ移動する。「公式ライン」「インスタグラム」「当サイト」から投稿可能です。</p>
-            </div>
-          </div>
-          <div class="col s6 l3">
-            <div class="stepWrap step03">
-              <div class="stepicon">
-                <img src="{{ asset('images/sumaho.png') }}" alt="" width="30%" height="auto">
-              </div>
-              <h3>情報を入力する</h3>
-              <p>Step2で選択したメディアに従って情報を入力してください。</p>
-            </div>
-          </div>
-          <div class="col s6 l3">
-            <div class="stepWrap step04">
-              <div class="stepicon">
-                <img src="{{ asset('images/maney.png') }}" alt="" width="30%" height="auto">
-              </div>
-              <h3>報酬(PayPal)</h3>
-              <p>BakeryTokyoからPayPalでお支払い致します。※お支払い方法は、今後増やしていく予定です。</p>
-            </div>
-          </div>
-        </div>
-        <div class="cvPc">
-          <div class="cvWrap">
-            <p class="cvText">スマホに眠っているパン画像を買い取ります。</p>
-            <p class="cvSmall">※一部条件があります。以下のステップをご確認下さい。</p>
-            <a href="/pan/type/">
-              <button class="cvBtn">投稿フォームへ移動</button>
-            </a>
-          </div>
-        </div>
-        <div class="termsOfUse">
-          <p> [ 利用規約 ] </p>
-          <ol>
-            <li>キャンペーン期間: 2020年6月30日まで。</li>
-            <li>キャンペーンは、予告なく変更または終了になる場合があります。</li>
-            <li>画像提供は、本人のみお願いします。</li>
-            <li>ユーザーは、投稿情報(画像を含む)について、無償で利用（複製、複写、改変）する権利を許諾するものとします。この利用の許諾は永続的かつ取消不能のものとします。</li>
-            <li>投稿後変更または削除を行いたい場合は、BakeryTokyoのソーシャルメディアに直接お問い合わせください。</li>
-            <li>bakerytokyo.comは最終的に全ての解釈権を有します。</li>
-          </ol>
-        </div>
+
     </main>
     <footer>
       <div class="footer-inner">

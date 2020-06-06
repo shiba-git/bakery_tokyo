@@ -1,0 +1,122 @@
+#purchase .mainText{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#purchase .mainText > p{
+  color: #343434;
+  font-size: 18px;
+  text-align: center;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin: 5px 0 0 0;
+}
+.step{
+  width: 99%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.step > .titlewrap{
+  width: 80%;
+  margin: 0 auto;
+}
+.step > .titlewrap > h2{
+  font-size: 18px;
+  text-align: center;
+  color: rgb(186, 27, 45);
+  font-weight: bold;
+}
+.col{
+  margin-top: 10px;
+}
+.stepWrap{
+  width: 99%;
+  padding: 0 15px;
+  margin: 0 auto;
+  border: 1px solid rgb(186, 27, 45);
+  height: 300px;
+  background-color: #fff;
+  position: relative;
+}
+
+.stepWrap::before{
+  position: absolute;
+  width: 87px;
+  height: 25px;
+  top: 10px;
+  left: -1px;
+  content: '';
+}
+.stepWrap p{
+  font-size: 13px;
+}
+
+.step01::before{
+  background: url(/images/step01.png);
+  background-size: 87px 25px;
+  background-repeat: no-repeat;
+}
+.step02::before{
+  background: url(/images/step02.png);
+  background-size: 87px 25px;
+  background-repeat: no-repeat;
+}
+.step03::before{
+  background: url(/images/step03.png);
+  background-size: 87px 25px;
+  background-repeat: no-repeat;
+}
+.step04::before{
+  background: url(/images/step04.png);
+  background-size: 87px 25px;
+  background-repeat: no-repeat;
+}
+.stepicon{
+  margin-top: 50px;
+  text-align: center;
+}
+#purchase .col{
+  margin-top: 20px;
+}
+#purchase h3{
+  margin-top: 5px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.cvSp{
+  display: none;
+}
+.cvPc{
+  display: block;
+}
+.cvWrap{
+  margin: 50px 0;
+  padding: 50px 0;
+  background-color: rgb(255, 180, 62);
+  text-align: center;
+}
+.cvText{
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.cvSmall{
+  margin-top: 1px;
+  font-size: 15px;
+}
+.cvBtn{
+  margin-top: 10px;
+  width: 30%;
+  height: 50px;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 2px;
+  box-shadow: 0 2px 10px 0 rgba(174,191,212,.26);
+}
+.termsOfUse{
+  width: 85%;
+  margin: 0 auto;
+}
+.termsOfUse > ol > li{
+  font-size: 14px;
+}

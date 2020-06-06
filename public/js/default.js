@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     edge: 'right'
   });
 
+
   $('#recommend > .col > .recommend-item > figure').matchHeight();
   $('.col > .choosePanFromImage-item > figure').matchHeight();
   $('.col > .searchStoreBox-item > .searchStoreBox-itemWrap').matchHeight();

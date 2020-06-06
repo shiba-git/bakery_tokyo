@@ -37,4 +37,8 @@ class HomeController extends Controller
     {
         return view('pan.type');
     }
+    public function new()
+    {
+        return view('new.index');
+    }
 }
