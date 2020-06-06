@@ -65,11 +65,14 @@
           <p>新型コロナウイルスの影響により、飲食業界は大きな打撃を受けている。</p>
           <p>営業再開後、新しい商品などを訴求したい企業様はBakeryTokyoがお手伝いします。</p>
         </div>
+        <div class="mainText">
+          <p>訴求したい商品(パンなど)をbakerytokyo.comに掲載いたします。</p>
+        </div>
         <div class="imagesNew">
           <img src="{{ asset('images/new_desc.jpg') }}" alt="" width="100%" height="auto">
         </div>
         <div class="mainText">
-          <p>トップページの上部に掲載します。<br>素材は、以下の２点のご用意をよろしくお願いいたします。</p>
+          <p>トップページの上部に掲載します。<br>素材は、以下の3点のご用意をよろしくお願いいたします。</p>
         </div>
         <div class="imagesText">
           <h2>準備して頂く素材</h2>
@@ -77,6 +80,7 @@
             <li>商品画像</li>
             <li>訴求したい文言
             </li>
+            <li>遷移させたいリンク</li>
           </ul>
         </div>
         <div class="imagesText">
@@ -111,7 +115,7 @@
     <script src="{{ asset('js/default.js') }}"></script>
     <script type="text/javascript">
       $(function() {
-          var $elem = $('#purchase > .mainImg > img');
+          var $elem = $('#new > .mainImg > img');
           var sp = '_sp.';
           var pc = '_pc.';
           var replaceWidth = 600;

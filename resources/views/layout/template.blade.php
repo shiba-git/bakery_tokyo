@@ -64,7 +64,7 @@
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="{{ asset('js/jquery.matchHeight-min.js') }}"></script>]
+    <script src="{{ asset('js/jquery.matchHeight-min.js') }}"></script>
     <script src="{{ asset('js/default.js') }}"></script>
     <script> 
     $(function(){

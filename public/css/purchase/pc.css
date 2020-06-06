@@ -1,9 +1,11 @@
-#purchase .mainText{
+#purchase .mainText,
+#new .mainText{
   width: 85%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 25px;
 }
-#purchase .mainText > p{
+#purchase .mainText > p,
+#new .mainText > p{
   color: #343434;
   font-size: 18px;
   text-align: center;
@@ -100,6 +102,9 @@
   font-size: 25px;
   font-weight: 400;
 }
+.new .cvWrap{
+  margin-bottom: 0px;
+}
 .cvSmall{
   margin-top: 1px;
   font-size: 15px;
@@ -119,4 +124,23 @@
 }
 .termsOfUse > ol > li{
   font-size: 14px;
+}
+
+/* new */
+.imagesNew,
+.imagesText{
+  max-width: 550px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.imagesText{
+  padding: 20px;
+  padding-bottom: 0px;
+  margin-top: 25px; /* 上書き */
+}
+.imagesText > h2{
+  font-size: 20px;
+}
+.imagesText > ul > li{
+  list-style-type: disc;
 }

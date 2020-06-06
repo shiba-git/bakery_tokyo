@@ -41,7 +41,7 @@
                 <div class="row bannerWrap" style="margin-bottom: 15px">
                     <div class="col s12 l6">
                       <div class="banner">
-                        <a href="/">
+                        <a href="/purchase/">
                       		<img src="{{ asset('images/banner.jpg') }}" alt="" width="100%">
                         </a>
                       </div>
@@ -58,7 +58,7 @@
                 <div class="row bannerWrap">
                     <div class="col s12 l6">
                       <div class="banner">
-                        <a href="/">
+                        <a href="/new/">
                           <img src="{{ asset('images/banner2.jpg') }}" alt="" width="100%">
                         </a>
                       </div>
