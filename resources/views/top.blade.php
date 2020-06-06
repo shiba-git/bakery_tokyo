@@ -41,7 +41,7 @@
       </div>
       <div class="main-wrap">
         <div class="container">
-        	<div class="recommend row" id="tokyopan">
+        	<!--<div class="recommend row" id="tokyopan">
             	<h2><i class="material-icons">local_dining</i>特集</h2>
             	<ul id="slider">
             		<li class="border">
@@ -56,8 +56,8 @@
 	            		</div>
             		</li>
             	</ul>
-        	</div> 
- 	      <!-- <div class="recommend row" id="tokyopan">
+        	</div>  -->
+ 	      <div class="recommend row" id="tokyopan">
             <h2><i class="material-icons">local_dining</i>目的地 ✖ 好きなパンを探す</h2>
             <div class="cover">
               <div class="col s12 l5">
@@ -89,7 +89,7 @@
 	              </a>
 	            </div>
           	</div>
-          </div> -->
+          </div> 
           <div class="recommend row" id="recommend">
             <h2><i class="material-icons">local_dining</i>おススメのパン</h2>
             <p class="description"><a href="https://www.instagram.com/bakery_tokyo/" target="_blank">BakeryTokyoのインスタグラム</a>で評価、いいね！が良かったパンを掲載しています。</p>
