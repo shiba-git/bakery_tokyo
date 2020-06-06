@@ -89,7 +89,7 @@
           </ul>
         </div>
         <div class="mainText">
-          <p>以下のボタンから、申し込みよろしくお願いいたします。</p>
+          <p>以下のボタンから、申し込みお願いいたします。</p>
         </div>
         <div class="new">
           <div class="cvWrap">
@@ -102,11 +102,6 @@
         </div>
 
     </main>
-    <footer>
-      <div class="footer-inner">
-        <p class="copyright"><small>@Copyright2020 BakeryTokyo.All Rights Reserved.</small></p>
-      </div>
-    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="

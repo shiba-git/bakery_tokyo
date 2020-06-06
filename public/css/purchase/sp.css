@@ -102,6 +102,9 @@
   background-color: rgb(255, 180, 62);
   text-align: center;
 }
+.new .cvWrap{
+  margin-bottom: 0px;
+}
 .cvText{
   margin-bottom: 0px;
 }
