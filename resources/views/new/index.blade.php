@@ -11,14 +11,14 @@
     <meta charset="utf-8">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"/>
-    <meta name="description" content="インスタグラム画像提供よろしくお願いいたします。">
-    <meta name="keywords" content="パン,ベーカリー,東京,東京グルメ,画像,Instagram,インスタグラム">
-    <meta property="og:title" content="パン画像を買い取ります。" />
+    <meta name="description" content="新しい商品などを訴求したい企業様はBakeryTokyoがお手伝いします。">
+    <meta name="keywords" content="パン,ベーカリー,東京,東京グルメ,画像,Instagram,インスタグラム,企業,パン屋">
+    <meta property="og:title" content="パン屋さんへ" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bakery-tokyo.com/purchase/" />
     <meta property="og:image" content="https://bakery-tokyo.com/images/banner.jpg" />
     <meta property="og:site_name" content="bakerytokyo" />
-    <meta property="og:description" content="あなたのスマホに眠っているパン画像を一枚につき100円で買い取ります。" />
+    <meta property="og:description" content="新しい商品などを訴求したい企業様はBakeryTokyoがお手伝いします。" />
     <link rel="icon" href="{{ asset('images/favicon.ico') }}">
     <link rel="profile"href="">
     <link rel="pingback" href="">
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/purchase/sp.css') }}" media="screen and (max-width:600px)">
     <link rel="stylesheet" href="{{ asset('css/purchase/pc.css') }}" media="screen and (min-width:600px)">
-    <title>画像を買い取ります | BarkeyTokyo</title>
+    <title>パン屋さんへ | BarkeyTokyo</title>
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TG9L93Z"></script>
   </head>
   <body>
@@ -59,7 +59,7 @@
     </header>
     <main id="new">
         <div class="mainImg">
-          <img src="{{ asset('images/new_sp.jpg') }}" alt="" width="100%" height="auto">
+          <img src="{{ asset('images/new_sp.jpg') }}" alt="パン画像一枚につき100円で買い取ります" width="100%" height="auto">
         </div>
         <div class="mainText">
           <p>新型コロナウイルスの影響により、飲食業界は大きな打撃を受けている。</p>

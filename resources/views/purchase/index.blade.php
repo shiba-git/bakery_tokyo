@@ -59,7 +59,7 @@
     </header>
     <main id="purchase">
         <div class="mainImg">
-          <img src="{{ asset('images/purchase_sp.jpg') }}" alt="" width="100%" height="auto">
+          <img src="{{ asset('images/purchase_sp.jpg') }}" alt="パン画像一枚につき100円で買い取ります" width="100%" height="auto">
         </div>
         <div class="mainText">
           <p>新型コロナウイルスの影響により、飲食業界は大きな打撃を受けている。</p>
