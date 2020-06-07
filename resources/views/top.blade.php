@@ -34,7 +34,7 @@
                 <!-- id="locationBtn" -->
                 <div class="col s4 m4 l4"> 
                   <a href="/purchase/" class="waves-effect waves-light btn-large btn-field-position">
-                    <i class="material-icons location-icon">star</i>画像を<br class="visible-sp">売る(準備中)
+                    <i class="material-icons location-icon">star</i>画像を<br class="visible-sp">売る
                   </a>
                 </div>
           </div>

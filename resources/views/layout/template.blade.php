@@ -24,6 +24,7 @@
     <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <title>@yield('title') | BarkeyTokyo</title>
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TG9L93Z"></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
