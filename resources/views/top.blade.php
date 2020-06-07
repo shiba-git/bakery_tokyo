@@ -41,6 +41,30 @@
       </div>
       <div class="main-wrap">
         <div class="container">
+        	 <div class="tags">
+              <h2><i class="material-icons">notifications_active</i>開催中のキャンペーン</h2>
+                <div class="row bannerWrap" style="margin-bottom: 15px">
+                    <div class="col s12 l6">
+                      <div class="banner">
+                        <a href="/purchase/">
+                      		<img src="{{ asset('images/banner.jpg') }}" alt="" width="100%">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="tags" style="margin-top: 0px;">
+              <h2><i class="material-icons">chat</i>おしらせ</h2>
+                <div class="row bannerWrap">
+                    <div class="col s12 l6">
+                      <div class="banner">
+                        <a href="/new/">
+                          <img src="{{ asset('images/banner2.jpg') }}" alt="" width="100%">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
         	<!--<div class="recommend row" id="tokyopan">
             	<h2><i class="material-icons">local_dining</i>特集</h2>
             	<ul id="slider">
@@ -57,7 +81,8 @@
             		</li>
             	</ul>
         	</div>  -->
- 	      <div class="recommend row" id="tokyopan">
+
+ 	      <!-- <div class="recommend row" id="tokyopan">
             <h2><i class="material-icons">local_dining</i>目的地 ✖ 好きなパンを探す</h2>
             <div class="cover">
               <div class="col s12 l5">
@@ -89,7 +114,7 @@
 	              </a>
 	            </div>
           	</div>
-          </div> 
+          </div>  -->
           <div class="recommend row" id="recommend">
             <h2><i class="material-icons">local_dining</i>おススメのパン</h2>
             <p class="description"><a href="https://www.instagram.com/bakery_tokyo/" target="_blank">BakeryTokyoのインスタグラム</a>で評価、いいね！が良かったパンを掲載しています。</p>
