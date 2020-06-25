@@ -42,7 +42,7 @@
                     <div class="col s12 l6">
                       <div class="banner">
                         <a href="/purchase/">
-                      		<img src="{{ asset('images/banner.jpg') }}" alt="" width="100%">
+                      		<img src="{{ asset('images/banner_cover.jpg') }}" alt="" width="100%">
                         </a>
                       </div>
                     </div>
