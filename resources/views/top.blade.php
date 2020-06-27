@@ -42,7 +42,7 @@
       <div class="main-wrap">
         <div class="container">
         	 <div class="tags">
-              <h2><i class="material-icons">notifications_active</i>開催中のキャンペーン</h2>
+              <h2><i class="material-icons">notifications_active</i>キャンペーン</h2>
                 <div class="row bannerWrap" style="margin-bottom: 15px">
                     <div class="col s12 l6">
                       <div class="banner">
