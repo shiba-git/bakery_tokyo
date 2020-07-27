@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <title>@yield('title') | BarkeyTokyo</title>
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TG9L93Z"></script>
+    <script data-ad-client="ca-pub-6085934214254304" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
